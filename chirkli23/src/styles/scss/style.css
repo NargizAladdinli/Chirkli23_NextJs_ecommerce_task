@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  list-style-type: none;
+  border: none;
+}
+
+.body {
+  background-color: #121d23;
+  color: #fff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.scroll-button {
+  font-size: 18px;
+  width: 45px;
+  color: #DAA14C;
+  height: 45px;
+  border: 2px solid #DAA14C;
+  position: fixed;
+  border-radius: 50%;
+  bottom: 25px;
+  right: 25px;
+  background: inherit;
+  animation: transfom 3s infinite;
+  transition: all 3s linear;
+}
+
+@keyframes transfom {
+  0% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}/*# sourceMappingURL=style.css.map */
