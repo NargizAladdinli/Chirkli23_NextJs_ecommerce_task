@@ -1,18 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   outline: none;
-  list-style-type: none;
   border: none;
+}
+*::-moz-selection {
+  background-color: #e99f4c;
+}
+*::selection {
+  background-color: #e99f4c;
 }
 
 .body {
-  background-color: #121d23;
-  color: #fff;
+  background-color: #264143;
+  color: #f2ebe9;
 }
 
 ul {
+  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -42,4 +49,33 @@ ul {
   100% {
     transform: translateY(5px);
   }
+}
+#header .all-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .all-content .logo a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+  font-family: "Michroma", sans-serif;
+}
+#header .all-content .logo a span {
+  background: linear-gradient(124deg, #f95a85, #f70361, #f95420);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media (max-width: 768px) {
+  #header .all-content .menu {
+    display: none;
+  }
+}
+#header .all-content .menu .list {
+  display: flex;
+  gap: 20px;
+}
+#header .all-content .menu .list li a {
+  text-decoration: none;
+  color: #f2ebe9;
 }/*# sourceMappingURL=style.css.map */

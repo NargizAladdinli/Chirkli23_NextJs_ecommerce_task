@@ -1,0 +1,27 @@
+#header{
+    .all-content{
+        @include Flex($a_items:center,$j_content:center);
+        .logo{
+            a{
+                @include Text($t_decoration:none,$f_size:$size_30,$f_weight:$weight_700);
+                font-family: 'Michroma', sans-serif;
+                span{
+                    background: $gradient_clr;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+        .menu{
+            @media (max-width:768px) { display: none; }
+            .list{
+                @include Flex($gap:20px);
+                li{
+                    a{
+                        @include Text($t_decoration:none,$colrs:$f2_clr);
+                    }
+                }
+            }
+        }
+    }
+}

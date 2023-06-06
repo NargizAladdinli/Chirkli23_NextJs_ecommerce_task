@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    list-style-type: none;
     border: none;
+    &::selection{
+        background-color: #e99f4c;
+    }
 }
 .body {
-   background-color: #121d23;
-   color: #fff;
+   background-color: #264143;
+   color: #f2ebe9;
 }
 ul {
+    list-style: none;
     margin: 0;
     padding: 0;
 }
