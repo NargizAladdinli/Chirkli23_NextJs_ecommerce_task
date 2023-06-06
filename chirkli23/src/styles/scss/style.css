@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +16,7 @@
 .body {
   background-color: #264143;
   color: #f2ebe9;
+  font-family: "Michroma", sans-serif;
 }
 
 ul {
@@ -27,9 +28,9 @@ ul {
 .scroll-button {
   font-size: 18px;
   width: 45px;
-  color: #DAA14C;
+  color: #e99f4c;
   height: 45px;
-  border: 2px solid #DAA14C;
+  border: 2px solid #e99f4c;
   position: fixed;
   border-radius: 50%;
   bottom: 25px;
@@ -52,14 +53,13 @@ ul {
 }
 #header .all-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 #header .all-content .logo a {
   text-decoration: none;
   font-size: 30px;
   font-weight: 700;
-  font-family: "Michroma", sans-serif;
 }
 #header .all-content .logo a span {
   background: linear-gradient(124deg, #f95a85, #f70361, #f95420);
@@ -77,5 +77,38 @@ ul {
 }
 #header .all-content .menu .list li a {
   text-decoration: none;
-  color: #f2ebe9;
+  font-size: 17px;
+  transition: all 0.3s ease-in-out;
+}
+#header .all-content .menu .list li a:hover {
+  color: #de5499;
+}
+#header .all-content .menu .list li .active {
+  color: #de5499;
+}
+#header .all-content .menu .list li .nonactive {
+  color: inherit;
+}
+#header .all-content .other {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#header .all-content .other .user a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
+  position: relative;
+}
+#header .all-content .other .user a span {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: -7px;
+  font-size: 14px;
+  text-align: center;
+  background: #de5499;
+  line-height: 20px;
+  border-radius: 50px;
 }/*# sourceMappingURL=style.css.map */

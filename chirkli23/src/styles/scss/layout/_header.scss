@@ -1,10 +1,9 @@
 #header{
     .all-content{
-        @include Flex($a_items:center,$j_content:center);
+        @include Flex($a_items:center,$j_content:space-between);
         .logo{
             a{
                 @include Text($t_decoration:none,$f_size:$size_30,$f_weight:$weight_700);
-                font-family: 'Michroma', sans-serif;
                 span{
                     background: $gradient_clr;
                     -webkit-background-clip: text;
@@ -18,7 +17,25 @@
                 @include Flex($gap:20px);
                 li{
                     a{
-                        @include Text($t_decoration:none,$colrs:$f2_clr);
+                        @include Text($t_decoration:none,$f_size:$size_17);
+                        transition: all 0.3s ease-in-out;
+                        &:hover{ color: $de_clr; }
+                    }
+                    .active{ color: $de_clr; }
+                    .nonactive{ color: inherit; }
+                }
+            }
+        }
+        .other{
+            @include Flex($gap:20px,$a_items:center);
+            .user{
+                a{
+                    font-family: 'Poppins', sans-serif;
+                    @include Text($t_decoration:none,$colrs:inherit,$f_size:$size_20);
+                    position: relative;
+                    span{
+                        @include Img($pos:absolute,$top:-7px,$wid:20px,$heit:20px);
+                        @include Text($t_align:center,$f_size:$size_14,$radius:$radius_50,$l_heit:20px,$ground:$de_clr);
                     }
                 }
             }

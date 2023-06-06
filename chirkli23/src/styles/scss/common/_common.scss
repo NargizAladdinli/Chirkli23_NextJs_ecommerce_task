@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +12,7 @@
 .body {
    background-color: #264143;
    color: #f2ebe9;
+   font-family: 'Michroma', sans-serif;
 }
 ul {
     list-style: none;
@@ -21,9 +22,9 @@ ul {
 .scroll-button {
    font-size: 18px;
    width: 45px;
-   color: #DAA14C;
+   color: #e99f4c;
    height: 45px;
-   border: 2px solid #DAA14C;
+   border: 2px solid #e99f4c;
    position: fixed;
    border-radius: 50%;
    bottom: 25px;
