@@ -11,7 +11,7 @@ const Header = () => {
             <div className="all-content">
                 <div className="logo">
                     <Link href='/'>
-                        <span>ChiRkli</span>
+                        <span>ChiRkLi</span>
                     </Link>
                 </div>
                 <nav className="menu">

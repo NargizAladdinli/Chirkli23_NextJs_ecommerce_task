@@ -1,0 +1,15 @@
+%_logo {
+    @include Text($t_decoration: none, $f_size: $size_30, $f_weight: $weight_700);
+    font-family: 'Michroma', sans-serif;
+    span {
+        background: $gradient_clr;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+%_media {
+    font-family: 'Jost', sans-serif;
+    @include Text($l_heit: 2, $f_size: $size_15, $t_decoration: none, $colrs: $f2_clr);
+    transition: all 0.3s ease;
+    &:hover { color: $de_clr; }
+}

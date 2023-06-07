@@ -1,0 +1,32 @@
+#footer {
+    .footer-first {
+        @include Text($ground: $layout_clr, $colrs: $f2_clr);
+        padding: 40px 0px;
+        .container {
+            max-width: 1140px;
+            .logo {
+                a { @extend %_logo; }
+            }
+            .footer-list {
+                margin-top: 20px;
+                li {
+                    padding-top: 3px;
+                    .media {
+                        font-family: 'Jost', sans-serif;
+                        @include Text($l_heit: 2, $f_size: $size_15);
+                    }
+                    .media-link { @extend %_media; }
+
+                    .site-link {
+                        @extend %_media;
+                        @include Text($f_size: $size_16, $f_weight: $weight_500);
+                    }
+                }
+            }
+            .site-map {
+                @include Text($f_size: 19px, $f_weight: $weight_700, $l_spacing: .7px);
+                font-family: 'Michroma', sans-serif;
+            }
+        }
+    }
+}

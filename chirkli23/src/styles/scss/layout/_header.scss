@@ -1,15 +1,9 @@
 #header{
+    font-family: 'Michroma', sans-serif;
     .all-content{
         @include Flex($a_items:center,$j_content:space-between);
         .logo{
-            a{
-                @include Text($t_decoration:none,$f_size:$size_30,$f_weight:$weight_700);
-                span{
-                    background: $gradient_clr;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                }
-            }
+            a{ @extend %_logo; }
         }
         .menu{
             @media (max-width:768px) { display: none; }
