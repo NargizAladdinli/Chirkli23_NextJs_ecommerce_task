@@ -37,6 +37,9 @@ const Header = () => {
                             <Link className={current === 'women' ? 'active' : 'nonactive'} href="#">Women</Link>
                         </li>
                         <li>
+                            <Link className={current === 'women' ? 'active' : 'nonactive'} href="#">Kids</Link>
+                        </li>
+                        <li>
                             <Link className={current === 'about' ? 'active' : 'nonactive'} href="#">About</Link>
                         </li>
                         <li>
@@ -48,20 +51,15 @@ const Header = () => {
                     </ul>
                 </nav>
                 <div className="other">
-                    <div className="dark-template user">
+                    <div className="dark-template item">
                         <button onClick={handleTheme}>{theme === "dark" ? <FaSun/> : <FaMoon/>}</button>
                     </div>
-                    <div className="user">
-                        <Link href="#">
-                        <FaSearch/>
-                        </Link>
-                    </div>
-                    <div className="user">
+                    <div className="user item ">
                         <Link href="#">
                             <FaUser/>
                         </Link>
                     </div>
-                    <div className="user">
+                    <div className="item cart">
                         <Link href='#'>
                             <FaShoppingCart/>
                             <span>0</span>

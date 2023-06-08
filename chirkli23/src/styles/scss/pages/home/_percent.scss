@@ -1,0 +1,24 @@
+#percent{
+    padding-top: 70px;
+    .percent-img{
+        @include Img($wid:100%,$pos:relative);
+        &::before{
+            content: "";
+            @include Img($pos:absolute,$z_index:0,$opacity:0,$top:0,$botom:0,$left:0,$right:0);
+            background: rgba(178, 37, 45, 0.25);
+            transform: scaleY(1);
+            transform-origin: 50%;
+            transition-property: transform;
+            transition-duration: .9s;
+            transition-timing-function: ease-out;
+            cursor: pointer;
+        }
+        &:hover{
+            &::before{
+                opacity: 1;
+                transform: scaleY(0);
+            }
+        }
+        img{ @include Img($wid:100%,$heit:100%,$o_fit:cover); }
+    }
+}
