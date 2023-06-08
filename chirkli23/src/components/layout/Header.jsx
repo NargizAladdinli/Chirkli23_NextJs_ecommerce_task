@@ -1,10 +1,21 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { FaShoppingCart, FaUser, FaSearch } from "react-icons/fa";
+import { FaShoppingCart, FaUser, FaSearch, FaMoon, FaSun } from "react-icons/fa";
+import { useContext, useEffect } from "react";
+import { ThemeContext } from "@/context/theme.context";
 
 const Header = () => {
     const router =useRouter();
     const current = router.pathname;
+    const {theme, setTheme} = useContext(ThemeContext)
+    useEffect(() => {
+        document.body.className = theme;
+        // localStorage.setItem('tema', theme);
+    },[theme])
+    const handleTheme = () => {
+        setTheme(theme === "dark" ? "light" : "dark")
+    }
+
     return (
        <header id="header">
         <div className="container">
@@ -37,6 +48,9 @@ const Header = () => {
                     </ul>
                 </nav>
                 <div className="other">
+                    <div className="dark-template user">
+                        <button onClick={handleTheme}>{theme === "dark" ? <FaSun/> : <FaMoon/>}</button>
+                    </div>
                     <div className="user">
                         <Link href="#">
                         <FaSearch/>
@@ -52,9 +66,6 @@ const Header = () => {
                             <FaShoppingCart/>
                             <span>0</span>
                         </Link>
-                    </div>
-                    <div className="dark-template">
-                        
                     </div>
                 </div>
             </div>

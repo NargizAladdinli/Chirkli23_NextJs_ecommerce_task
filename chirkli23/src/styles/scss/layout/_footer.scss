@@ -27,6 +27,51 @@
                 @include Text($f_size: 19px, $f_weight: $weight_700, $l_spacing: .7px);
                 font-family: 'Michroma', sans-serif;
             }
+            .submit{
+                margin-top: 20px;
+                input{
+                    @include Text($ground:inherit,$colrs:inherit,$border:1px solid $ed_clr,$radius:10px 0 0 10px);
+                    padding: 9px 20px;
+                    &::placeholder{ color: inherit;}
+                    @media (max-width:768px) {
+                        padding: 9px 6px;
+                    }
+                }
+                button{ @extend %_submit; }
+            }
+            .opening-time{ margin-top: 20px; }
+            .visa-cart{
+                margin-top: 10px;
+                @include Text($f_size:$size_25);
+            }
+        }
+    }
+    .footer-second{
+        padding: 20px 0;
+        .container{
+            max-width: 1140px;
+            .row-second{
+                @include Flex($a_items:center,$j_content:space-between);
+                p{
+                    font-family: 'Jost', sans-serif;
+                    @include Text($l_heit: 2, $f_size: $size_15);
+                }
+                .sosial{
+                    @include Flex($gap:20px);
+                    li{
+                        a{
+                            @include Text($colrs:inherit,$ground:inherit,$radius:$radius_50,$border:1px solid $de_clr,$l_heit:39px,$t_align:center,$f_size:$size_15);
+                            @include Img($wid:40px,$heit:40px);
+                            display: block;
+                            transition: all 0.5s ease-in-out;
+                            &:hover{ 
+                                @include Text($ground:$de_clr,$colrs:$body_clr);
+                                transform: rotate(360deg) scale(1.1);
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -5,14 +5,23 @@
     box-sizing: border-box;
     outline: none;
     border: none;
-    &::selection{
-        background-color: #e99f4c;
-    }
+    &::selection{ background-color: #e99f4c; }
 }
-.body {
+.dark {
    background-color: #264143;
    color: #f2ebe9;
+   font-size: 15px;
+   font-weight: 600;
    font-family: 'Poppins', sans-serif;
+   transition: all 1s linear;
+}
+.light {
+   background-color: #f2ebe9;
+   color: #264143;
+   font-size: 15px;
+   font-weight: 600;
+   font-family: 'Poppins', sans-serif;
+   transition: all 1s linear;
 }
 ul {
     list-style: none;
@@ -20,27 +29,25 @@ ul {
     padding: 0;
 }
 .scroll-button {
-   font-size: 18px;
-   width: 45px;
+   font-size: 20px;
+   width: 50px;
    color: #e99f4c;
-   height: 45px;
-   border: 2px solid #e99f4c;
+   height: 50px;
+   border: 3px solid #e99f4c;
    position: fixed;
    border-radius: 50%;
    bottom: 25px;
    right: 25px;
    background: inherit;
    animation: transfom 3s infinite;
-   transition: all 3s linear;
+   transition: all .2s linear;
+   &:hover{
+    background: #e99f4c;
+    color: #264143;
+   }
 }
 @keyframes transfom {
-    0%{
-        transform: translateY(5px);
-    }
-    50%{
-        transform: translateY(-5px);
-    }
-    100%{
-        transform: translateY(5px);
-    }
+    0%{ transform: translateY(5px); }
+    50%{ transform: translateY(-5px); }
+    100%{ transform: translateY(5px); }
 }

@@ -13,10 +13,22 @@
   background-color: #e99f4c;
 }
 
-.body {
+.dark {
   background-color: #264143;
   color: #f2ebe9;
+  font-size: 15px;
+  font-weight: 600;
   font-family: "Poppins", sans-serif;
+  transition: all 1s linear;
+}
+
+.light {
+  background-color: #f2ebe9;
+  color: #264143;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  transition: all 1s linear;
 }
 
 ul {
@@ -26,18 +38,22 @@ ul {
 }
 
 .scroll-button {
-  font-size: 18px;
-  width: 45px;
+  font-size: 20px;
+  width: 50px;
   color: #e99f4c;
-  height: 45px;
-  border: 2px solid #e99f4c;
+  height: 50px;
+  border: 3px solid #e99f4c;
   position: fixed;
   border-radius: 50%;
   bottom: 25px;
   right: 25px;
   background: inherit;
   animation: transfom 3s infinite;
-  transition: all 3s linear;
+  transition: all 0.2s linear;
+}
+.scroll-button:hover {
+  background: #e99f4c;
+  color: #264143;
 }
 
 @keyframes transfom {
@@ -73,6 +89,18 @@ ul {
 }
 #footer .footer-first .container .footer-list li .site-link:hover, #footer .footer-first .container .footer-list li .media-link:hover {
   color: #de5499;
+}
+
+#footer .footer-first .container .submit button {
+  color: inherit;
+  background: #de5499;
+  border: 1px solid #eddcd9;
+  border-radius: 0 10px 10px 0;
+  padding: 9px 9px;
+  transition: 0.5s ease-in-out;
+}
+#footer .footer-first .container .submit button:hover {
+  background: #8c3560;
 }
 
 #header {
@@ -129,6 +157,15 @@ ul {
   line-height: 20px;
   border-radius: 50px;
 }
+#header .all-content .other .user button {
+  color: inherit;
+  font-size: 20px;
+  background: #de5499;
+  line-height: 1px;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+}
 
 #footer .footer-first {
   color: #f2ebe9;
@@ -158,4 +195,70 @@ ul {
   font-weight: 700;
   letter-spacing: 0.7px;
   font-family: "Michroma", sans-serif;
+}
+#footer .footer-first .container .submit {
+  margin-top: 20px;
+}
+#footer .footer-first .container .submit input {
+  color: inherit;
+  background: inherit;
+  border: 1px solid #eddcd9;
+  border-radius: 10px 0 0 10px;
+  padding: 9px 20px;
+}
+#footer .footer-first .container .submit input::-moz-placeholder {
+  color: inherit;
+}
+#footer .footer-first .container .submit input::placeholder {
+  color: inherit;
+}
+@media (max-width: 768px) {
+  #footer .footer-first .container .submit input {
+    padding: 9px 6px;
+  }
+}
+#footer .footer-first .container .opening-time {
+  margin-top: 20px;
+}
+#footer .footer-first .container .visa-cart {
+  margin-top: 10px;
+  font-size: 25px;
+}
+#footer .footer-second {
+  padding: 20px 0;
+}
+#footer .footer-second .container {
+  max-width: 1140px;
+}
+#footer .footer-second .container .row-second {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer .footer-second .container .row-second p {
+  font-family: "Jost", sans-serif;
+  font-size: 15px;
+  line-height: 2;
+}
+#footer .footer-second .container .row-second .sosial {
+  display: flex;
+  gap: 20px;
+}
+#footer .footer-second .container .row-second .sosial li a {
+  color: inherit;
+  font-size: 15px;
+  text-align: center;
+  background: inherit;
+  border: 1px solid #de5499;
+  line-height: 39px;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+#footer .footer-second .container .row-second .sosial li a:hover {
+  color: #264143;
+  background: #de5499;
+  transform: rotate(360deg) scale(1.1);
 }/*# sourceMappingURL=style.css.map */

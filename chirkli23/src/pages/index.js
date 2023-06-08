@@ -11,7 +11,7 @@ export default function Home() {
         <link rel="icon" href="https://cdn.shopify.com/s/files/1/0607/7287/6512/files/favicon_d5c9515a-64b4-47af-9ef1-236eddcc39a8_16x16.png?v=1637219740" />
       </Head>
       <main>
-        
+    
       </main>
       <Scrolltotop/>
     </>

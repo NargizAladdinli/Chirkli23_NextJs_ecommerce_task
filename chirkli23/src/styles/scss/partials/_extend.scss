@@ -13,3 +13,9 @@
     transition: all 0.3s ease;
     &:hover { color: $de_clr; }
 }
+%_submit {
+    @include Text($radius: 0 10px 10px 0, $ground: $de_clr, $colrs: inherit, $border: 1px solid $ed_clr);
+    padding: 9px 9px;
+    transition: .5s ease-in-out;
+    &:hover { background: $hover_clr; }
+}

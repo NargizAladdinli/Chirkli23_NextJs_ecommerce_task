@@ -32,6 +32,10 @@
                         @include Text($t_align:center,$f_size:$size_14,$radius:$radius_50,$l_heit:20px,$ground:$de_clr);
                     }
                 }
+                button{
+                    @include Text($ground:$de_clr,$colrs:inherit,$radius:$radius_50,$l_heit:1px,$f_size:$size_20);
+                    @include Img($wid:40px,$heit:40px)
+                }
             }
         }
     }
