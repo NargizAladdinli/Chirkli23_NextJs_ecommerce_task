@@ -11,7 +11,7 @@
              }
         }
         .menu{
-            @media (max-width:768px) { display: none; }
+            @media (max-width:1200px) { display: none; }
             .list{
                 @include Flex($gap:20px);
                 li{

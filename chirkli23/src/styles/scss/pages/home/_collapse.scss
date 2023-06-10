@@ -22,3 +22,21 @@
         img{ @include Img($wid:100%,$heit:100%,$o_fit:cover); }
     }
 }
+#collapse{
+    padding-top: 70px;
+    .img-collapse{
+        @include Img($wid:100%,$heit:auto);
+        transition: all .3s ease;
+        &:hover{
+            transform: translateY(-10px);
+        }
+        a{
+            @include Text($t_decoration:none,$t_align:center,$colrs:inherit);
+            img{ @include Img($wid:100%,$heit:100%,$o_fit:contain,$o_pos:center); }
+            .text-collapse{
+                margin-top: 12px;
+                h4{ @include Text($f_size:$size_16,$f_weight:$weight_700); }
+            }
+        }
+    }
+}
