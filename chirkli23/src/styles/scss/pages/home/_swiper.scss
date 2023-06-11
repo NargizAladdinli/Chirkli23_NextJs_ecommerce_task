@@ -16,6 +16,8 @@
                     visibility: visible;
                 }
             }
+            @media (max-width:768px) { height: 300px; }
+            @media (max-width:512px) { height: 240px; }
             @include Img($wid: 100%, $heit: 590px);
             .swiper-slide {
                 img {
