@@ -3,6 +3,7 @@ import Scrolltotop from "@/components/scroll/Scrolltotop";
 import Percent from "@/components/percent/Percent";
 import Collapse from "@/components/Collapse/Collapse";
 import SwiperOne from "@/components/swiper/SwiperOne";
+import SwiperTwo from "@/components/swiper/SwiperTwo";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <main>
         <SwiperOne/>
         <Collapse/>
+        <SwiperTwo/>
         <Percent/>
       </main>
       <Scrolltotop/>

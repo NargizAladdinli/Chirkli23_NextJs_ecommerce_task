@@ -20,9 +20,12 @@
             @media (max-width:512px) { height: 240px; }
             @include Img($wid: 100%, $heit: 590px);
             .swiper-slide {
-                img {
-                    @include Img($wid:100%,$heit:100%,$o_fit:cover);
-                    display: block;
+                a{
+                    cursor: grab;
+                    img {
+                        @include Img($wid:100%,$heit:100%,$o_fit:cover);
+                        display: block;
+                    }
                 }
             }
             .swiper-button-prev{
@@ -55,9 +58,25 @@
                     @include Flex($j_content:center,$a_items:center);
                 }
             }
-            .swiper-button-disabled{
-                opacity: 1;
-            }
+            .swiper-button-disabled{  opacity: 1; }
         }
     }
 }
+#swipersecond{
+    padding-top: 50px;
+    .swiper {
+        @include Img($wid:100%,$heit:100%);
+        .swiper-slide {
+          background: inherit;
+          a{
+            cursor: grab;
+            img {
+                display: block;
+                @include Img($wid:100%,$heit:100%,$o_fit:cover);
+            }
+          }
+        }
+    }
+}
+  
+  
