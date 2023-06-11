@@ -8,9 +8,11 @@
 }
 *::-moz-selection {
   background-color: #e99f4c;
+  color: #264143;
 }
 *::selection {
   background-color: #e99f4c;
+  color: #264143;
 }
 
 .dark {
@@ -181,6 +183,86 @@ ul {
   #header .all-content .other .user {
     display: none;
   }
+}
+
+#swiper-head {
+  padding-top: 50px;
+}
+#swiper-head .swiper-content {
+  border-radius: 30px;
+  overflow: hidden;
+}
+#swiper-head .swiper-content .swiper {
+  width: 100%;
+  height: 590px;
+}
+#swiper-head .swiper-content .swiper:hover .swiper-button-prev {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+#swiper-head .swiper-content .swiper:hover .swiper-button-next {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+#swiper-head .swiper-content .swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+#swiper-head .swiper-content .swiper .swiper-button-prev {
+  width: auto;
+  transition: all 0.5s ease;
+  transform: translateX(10px);
+  opacity: 0;
+  visibility: hidden;
+}
+#swiper-head .swiper-content .swiper .swiper-button-prev:hover::after {
+  color: #f2ebe9;
+  background: #264143;
+  border: none;
+}
+#swiper-head .swiper-content .swiper .swiper-button-prev::after {
+  color: #000;
+  font-size: 20px;
+  background: transparent;
+  border: 3px solid #000;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#swiper-head .swiper-content .swiper .swiper-button-next {
+  width: auto;
+  transition: all 0.5s ease;
+  transform: translateX(-10px);
+  opacity: 0;
+  visibility: hidden;
+}
+#swiper-head .swiper-content .swiper .swiper-button-next:hover::after {
+  color: #f2ebe9;
+  background: #264143;
+  border: none;
+}
+#swiper-head .swiper-content .swiper .swiper-button-next::after {
+  color: #000;
+  font-size: 20px;
+  background: transparent;
+  border: 3px solid #000;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#swiper-head .swiper-content .swiper .swiper-button-disabled {
+  opacity: 1;
 }
 
 #percent {

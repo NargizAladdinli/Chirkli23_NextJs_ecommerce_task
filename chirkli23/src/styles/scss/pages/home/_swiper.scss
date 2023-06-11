@@ -1,0 +1,61 @@
+#swiper-head{
+    padding-top: 50px;
+    .swiper-content{
+        border-radius: $radius_30;
+        overflow: hidden;
+        .swiper {
+            &:hover{
+                .swiper-button-prev{
+                    transform: translateX(0);
+                    opacity: 1;
+                    visibility: visible;
+                }
+                .swiper-button-next{
+                    transform: translateX(0);
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            @include Img($wid: 100%, $heit: 590px);
+            .swiper-slide {
+                img {
+                    @include Img($wid:100%,$heit:100%,$o_fit:cover);
+                    display: block;
+                }
+            }
+            .swiper-button-prev{
+                width: auto;
+                transition: all .5s ease;
+                transform: translateX(10px);
+                opacity: 0;
+                visibility: hidden;
+                &:hover{
+                    &::after{ @include Text($ground:$body_clr,$border:none,$colrs:$f2_clr); }
+                }
+                &::after{
+                    @include Text($radius:$radius_50,$ground:transparent,$colrs:$black_clr,$f_size:$size_20,$border:3px solid $black_clr);
+                    @include Img($wid:50px,$heit:50px);
+                    @include Flex($j_content:center,$a_items:center);
+                }
+            }
+            .swiper-button-next{
+                width: auto;
+                transition: all .5s ease;
+                transform: translateX(-10px);
+                opacity: 0;
+                visibility: hidden;
+                &:hover{
+                    &::after{ @include Text($ground:$body_clr,$border:none,$colrs:$f2_clr); }
+                }
+                &::after{
+                    @include Text($radius:$radius_50,$ground:transparent,$colrs:$black_clr,$f_size:$size_20,$border:3px solid $black_clr);
+                    @include Img($wid:50px,$heit:50px);
+                    @include Flex($j_content:center,$a_items:center);
+                }
+            }
+            .swiper-button-disabled{
+                opacity: 1;
+            }
+        }
+    }
+}

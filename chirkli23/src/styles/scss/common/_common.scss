@@ -5,7 +5,10 @@
     box-sizing: border-box;
     outline: none;
     border: none;
-    &::selection{ background-color: #e99f4c; }
+    &::selection{ 
+        background-color: #e99f4c;
+        color: #264143;
+     }
 }
 .dark {
    background-color: #264143;
