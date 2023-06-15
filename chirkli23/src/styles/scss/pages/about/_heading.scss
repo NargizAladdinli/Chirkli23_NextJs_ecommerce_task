@@ -1,0 +1,6 @@
+#heading{
+    background: url("https://demo.templatetrend.com/magento/MAG666/pub/static/version1560839252/frontend/Ortho/euforia/en_US/images/bradcome.jpg");
+    margin: 50px 0;
+    @include Ground($ground_size:inherit,$ground_pos:inherit);
+    @include Img($wid:100%,$heit:335px);
+}

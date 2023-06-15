@@ -1,0 +1,26 @@
+#aboutus{
+    padding-top: 50px;
+    .container{
+        max-width: 1140px;
+        .content{
+            text-align: end;
+            padding: 50px 10px 50px 40px;
+            font-family: 'Jost', sans-serif;
+            h3{
+                padding-bottom: 10px;
+                @include Text($f_weight:$weight_500,$f_size:$size_26);
+            }
+            p{
+                margin-bottom: 22px;
+                @include Text($f_size:14px,$l_heit:1.6);
+            }
+        }
+        .adress{
+            text-align: start;
+        }
+        .img{
+            width: 100%;
+            img{ @include Img($wid:100%,$heit:100%,$o_fit:cover); }
+        }
+    }
+}
