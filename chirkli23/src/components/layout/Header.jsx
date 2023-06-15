@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { FaShoppingCart, FaUser, FaSearch, FaMoon, FaSun } from "react-icons/fa";
+import { FaShoppingCart, FaUser, FaSearch, FaMoon, FaSun, FaAngleDown } from "react-icons/fa";
 import { useContext, useEffect } from "react";
 import { ThemeContext } from "@/context/theme.context";
 
@@ -8,6 +8,8 @@ const Header = () => {
     const router =useRouter();
     const current = router.pathname;
     const {theme, setTheme} = useContext(ThemeContext)
+
+    
     useEffect(() => {
         document.body.className = theme;
         // localStorage.setItem('tema', theme);
@@ -40,7 +42,18 @@ const Header = () => {
                             <Link className={current === 'women' ? 'active' : 'nonactive'} href="#">Kids</Link>
                         </li>
                         <li>
-                            <Link className={current === 'about' ? 'active' : 'nonactive'} href="#">About</Link>
+                            <Link className={current === '/about' ? 'active' : 'nonactive'} href="#">About <FaAngleDown/></Link>
+                            <ul className="dropdown">
+                                <li>
+                                    <Link href='./about' className={current === '/about' ? 'active' : 'nonactive'}>About us</Link>
+                                </li>
+                                <li>
+                                    <Link href='./about' className={current === 'about' ? 'active' : 'nonactive'}>About us2</Link>
+                                </li>
+                                <li>
+                                    <Link href='./about' className={current === 'about' ? 'active' : 'nonactive'}>FAQ</Link>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <Link className={current === 'blog' ? 'active' : 'nonactive'} href="#">Blog</Link>

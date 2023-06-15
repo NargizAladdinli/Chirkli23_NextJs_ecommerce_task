@@ -15,13 +15,37 @@
             .list{
                 @include Flex($gap:20px);
                 li{
+                    position: relative;
+                    &:hover{
+                        .dropdown{
+                            opacity: 1;
+                            visibility: visible;
+                            transform: translateY(15px);
+                        }
+                    }
                     a{
                         @include Text($t_decoration:none,$f_size:$size_17);
                         transition: all 0.3s ease-in-out;
                         &:hover{ color: $de_clr; }
+                        svg{ font-size: $size_23; }
                     }
                     .active{ color: $de_clr; }
                     .nonactive{ color: inherit; }
+                    .dropdown{
+                        @include Text($ground:$white_clr,$colrs:$body_clr,$border:1px solid $ec_clr);
+                        @include Img($pos:absolute,$left:0,$opacity:0,$wid:200px);
+                        padding: 10px 0 10px 20px;
+                        transform: translateY(30px);
+                        visibility: hidden;
+                        transition: all 0.3s linear;
+                        li{
+                            a{
+                                display: block;
+                                padding: 5px 0;
+                                @include Text($f_size:$size_15,$l_heit:25px);
+                            }
+                        }
+                    }
                 }
             }
         }

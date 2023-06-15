@@ -133,6 +133,14 @@ ul {
   display: flex;
   gap: 20px;
 }
+#header .all-content .menu .list li {
+  position: relative;
+}
+#header .all-content .menu .list li:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(15px);
+}
 #header .all-content .menu .list li a {
   text-decoration: none;
   font-size: 17px;
@@ -141,11 +149,33 @@ ul {
 #header .all-content .menu .list li a:hover {
   color: #de5499;
 }
+#header .all-content .menu .list li a svg {
+  font-size: 23px;
+}
 #header .all-content .menu .list li .active {
   color: #de5499;
 }
 #header .all-content .menu .list li .nonactive {
   color: inherit;
+}
+#header .all-content .menu .list li .dropdown {
+  color: #264143;
+  background: #fff;
+  border: 1px solid #ececec;
+  width: 200px;
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  padding: 10px 0 10px 20px;
+  transform: translateY(30px);
+  visibility: hidden;
+  transition: all 0.3s linear;
+}
+#header .all-content .menu .list li .dropdown li a {
+  display: block;
+  padding: 5px 0;
+  font-size: 15px;
+  line-height: 25px;
 }
 #header .all-content .other {
   display: flex;
