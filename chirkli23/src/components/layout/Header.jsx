@@ -33,13 +33,73 @@ const Header = () => {
                             <Link className={current === '/' ? 'active' : 'nonactive'} href="/">Home</Link>
                         </li>
                         <li>
-                            <Link className={current === 'men' ? 'active' : 'nonactive'} href="#">Men</Link>
+                            <Link className={current === 'men' ? 'active' : 'nonactive'} href="#">Men <FaAngleDown/> </Link>
+                            <ul className="dropdown">
+                                <li>
+                                    <Link href='/' className={current === 'men' ? 'active' : 'nonactive'}>Hoodie</Link>
+                                </li>
+                                <li>
+                                    <Link href='/' className={current === 'men' ? 'active' : 'nonactive'}>Sweatshirt</Link>
+                                </li>
+                                <li>
+                                    <Link href='/' className={current === 'men' ? 'active' : 'nonactive'}>T-shirt</Link>
+                                </li>
+                                <li>
+                                    <Link href='/' className={current === 'men' ? 'active' : 'nonactive'}>Hats</Link>
+                                </li>
+                                <li>
+                                    <Link href='/' className={current === 'men' ? 'active' : 'nonactive'}>Accessory</Link>
+                                </li>
+                                <li>
+                                    <Link href='/' className={current === 'men' ? 'active' : 'nonactive'}>Shoes</Link>
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <Link className={current === 'women' ? 'active' : 'nonactive'} href="#">Women</Link>
+                            <Link className={current === 'women' ? 'active' : 'nonactive'} href="#">Women <FaAngleDown/></Link>
+                            <ul className="dropdown">
+                                <li>
+                                    <Link href='/' className={current === 'men' ? 'active' : 'nonactive'}>Hoodie</Link>
+                                </li>
+                                <li>
+                                    <Link href='/' className={current === 'men' ? 'active' : 'nonactive'}>Sweatshirt</Link>
+                                </li>
+                                <li>
+                                    <Link href='/' className={current === 'men' ? 'active' : 'nonactive'}>T-shirt</Link>
+                                </li>
+                                <li>
+                                    <Link href='/' className={current === 'men' ? 'active' : 'nonactive'}>Hats</Link>
+                                </li>
+                                <li>
+                                    <Link href='/' className={current === 'men' ? 'active' : 'nonactive'}>Accessory</Link>
+                                </li>
+                                <li>
+                                    <Link href='/' className={current === 'men' ? 'active' : 'nonactive'}>Shoes</Link>
+                                </li>
+                            </ul>
                         </li>
                         <li>
-                            <Link className={current === 'women' ? 'active' : 'nonactive'} href="#">Kids</Link>
+                            <Link className={current === 'women' ? 'active' : 'nonactive'} href="#">Kids <FaAngleDown/></Link>
+                            <ul className="dropdown">
+                                <li>
+                                    <Link href='/' className={current === 'men' ? 'active' : 'nonactive'}>Hoodie</Link>
+                                </li>
+                                <li>
+                                    <Link href='/' className={current === 'men' ? 'active' : 'nonactive'}>Sweatshirt</Link>
+                                </li>
+                                <li>
+                                    <Link href='/' className={current === 'men' ? 'active' : 'nonactive'}>T-shirt</Link>
+                                </li>
+                                <li>
+                                    <Link href='/' className={current === 'men' ? 'active' : 'nonactive'}>Hats</Link>
+                                </li>
+                                <li>
+                                    <Link href='/' className={current === 'men' ? 'active' : 'nonactive'}>Accessory</Link>
+                                </li>
+                                <li>
+                                    <Link href='/' className={current === 'men' ? 'active' : 'nonactive'}>Shoes</Link>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <Link className={current === '/about' ? 'active' : 'nonactive'} href="#">About <FaAngleDown/></Link>

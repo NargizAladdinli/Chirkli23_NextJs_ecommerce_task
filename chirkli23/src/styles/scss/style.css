@@ -139,7 +139,7 @@ ul {
 #header .all-content .menu .list li:hover .dropdown {
   opacity: 1;
   visibility: visible;
-  transform: translateY(15px);
+  padding: 10px 0 10px 20px;
 }
 #header .all-content .menu .list li a {
   text-decoration: none;
@@ -165,12 +165,13 @@ ul {
   border-radius: 10px;
   width: 200px;
   position: absolute;
+  z-index: 9999;
   left: 0;
   opacity: 0;
-  padding: 10px 0 10px 20px;
-  transform: translateY(30px);
+  padding: 0;
+  transform: translateY(15px);
   visibility: hidden;
-  transition: all 0.3s linear;
+  transition: all 0.3s ease-in-out;
 }
 #header .all-content .menu .list li .dropdown li a {
   display: block;
@@ -191,14 +192,14 @@ ul {
   position: relative;
 }
 #header .all-content .other .item a span {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   position: absolute;
-  top: -7px;
+  top: -14px;
   font-size: 14px;
   text-align: center;
   background: #de5499;
-  line-height: 20px;
+  line-height: 26px;
   border-radius: 50px;
 }
 #header .all-content .other .item button {

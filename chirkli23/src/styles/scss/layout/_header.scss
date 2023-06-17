@@ -20,7 +20,7 @@
                         .dropdown{
                             opacity: 1;
                             visibility: visible;
-                            transform: translateY(15px);
+                            padding: 10px 0 10px 20px;
                         }
                     }
                     a{
@@ -33,11 +33,11 @@
                     .nonactive{ color: inherit; }
                     .dropdown{
                         @include Text($ground:$white_clr,$colrs:$body_clr,$border:1px solid $ec_clr,$radius:$radius_10);
-                        @include Img($pos:absolute,$left:0,$opacity:0,$wid:200px);
-                        padding: 10px 0 10px 20px;
-                        transform: translateY(30px);
+                        @include Img($pos:absolute,$left:0,$opacity:0,$wid:200px,$z_index:9999);
+                        padding: 0;
+                        transform: translateY(15px);
                         visibility: hidden;
-                        transition: all 0.3s linear;
+                        transition: all 0.3s ease-in-out;
                         li{
                             a{
                                 display: block;
@@ -57,8 +57,8 @@
                     @include Text($t_decoration:none,$colrs:inherit,$f_size:$size_20);
                     position: relative;
                     span{
-                        @include Img($pos:absolute,$top:-7px,$wid:20px,$heit:20px);
-                        @include Text($t_align:center,$f_size:$size_14,$radius:$radius_50,$l_heit:20px,$ground:$de_clr);
+                        @include Img($pos:absolute,$top:-14px,$wid:25px,$heit:25px);
+                        @include Text($t_align:center,$f_size:$size_14,$radius:$radius_50,$l_heit:26px,$ground:$de_clr);
                     }
                 }
                 button{
