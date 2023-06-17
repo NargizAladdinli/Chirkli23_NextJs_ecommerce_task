@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { FaShoppingCart, FaUser, FaSearch, FaMoon, FaSun, FaAngleDown } from "react-icons/fa";
 import { useContext, useEffect } from "react";
 import { ThemeContext } from "@/context/theme.context";
+import MobileMenu from "./Mobile";
 
 const Header = () => {
     const router =useRouter();
@@ -22,6 +23,7 @@ const Header = () => {
        <header id="header">
         <div className="container">
             <div className="all-content">
+                <MobileMenu/>
                 <div className="logo">
                     <Link href='/'>
                         <span>ChiRkLi</span>
