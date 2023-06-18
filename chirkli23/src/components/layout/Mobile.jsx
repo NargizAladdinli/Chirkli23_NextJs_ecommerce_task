@@ -33,7 +33,7 @@ const MobileMenu = () => {
                     </li>
                 </ul>
             </div>
-            <button onClick={() => setActive(!active)}><span>sss</span></button>
+            <button onClick={() => setActive(!active)} className={active ? "open" : "close"}><span></span></button>
         </div>
     )
 }

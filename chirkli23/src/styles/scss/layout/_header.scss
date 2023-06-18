@@ -5,9 +5,7 @@
     .all-content{
         @include Flex($a_items:center,$j_content:space-between);
         @media (max-width:540px) { justify-content: space-around; }
-        @media (max-width:1024px) {
-            @include Flex($a_items:center,$j_content:space-around);
-        }
+        @media (max-width:1024px) { @include Flex($a_items:center,$j_content:space-around); }
         .logo{
             @include Flex($gap:15px,$a_items:center);
             a{ 
@@ -82,7 +80,7 @@
     display: none;
     @media (max-width:1024px) { display: block; }
     .mobile-menu{
-        @include Img($wid:100%,$pos:absolute,$top:100%,$left:0,$right:0,$z_index:999,$opacity:0);
+        @include Img($wid:100%,$pos:absolute,$top:130%,$left:0,$right:0,$z_index:999,$opacity:0);
         visibility: hidden;
         transform-origin: 0 0;
         transform: scaleY(0) translateY(0);
@@ -107,7 +105,7 @@
     .responsive{
         visibility: visible;
         transform: scaleY(1) translateY(0);
-        @include Img($wid:100%,$pos:absolute,$top:100%,$left:0,$right:0,$z_index:999,$opacity:1);
+        @include Img($wid:100%,$pos:absolute,$top:130%,$left:0,$right:0,$z_index:999,$opacity:1);
         background-color: $white_clr;
         transform-origin: 0 0;
         transition: all 0.5s ease;
@@ -126,6 +124,55 @@
                     &:hover{ color: $de_clr; }
                 }
             }
+        }
+    }
+    .close{
+        background: none;
+        position: relative;
+        &::before{
+            @include Img($wid:40px,$heit:5px,$pos:absolute,$top:-9px,$left:0);
+            content: "";
+            background: $de_clr;
+            transition: all 0.5s ease-in-out;
+        }
+        &::after{
+            @include Img($wid:40px,$heit:5px,$pos:absolute,$top:9px,$left:0);
+            content: "";
+            background: $de_clr;
+            transition: all 0.5s ease-in-out;
+        }
+        span{
+            @include Img($wid:40px,$heit:5px,$opacity:1);
+            display: block;
+            background: $de_clr;
+            visibility: visible;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+    .open{
+        background: none;
+        position: relative;
+        &::before{
+            @include Img($wid:40px,$heit:5px,$pos:absolute,$top:-9px,$left:0);
+            content: "";
+            background: $de_clr;
+            transition: all 0.5s ease-in-out;
+            transform: rotate(45deg) translate(5px, 5px);
+        }
+        &::after{
+            @include Img($wid:40px,$heit:5px,$pos:absolute,$top:9px,$left:0);
+            content: "";
+            background: $de_clr;
+            transition: all 0.5s ease-in-out;
+            transform: rotate(-45deg);
+            transform: rotate(-45deg) translate(8px, -7px);
+        }
+        span{
+            @include Img($wid:40px,$heit:5px,$opacity:0);
+            display: block;
+            background: $de_clr;
+            transition: all 0.5s ease-in-out;
+            visibility: hidden;
         }
     }
 }

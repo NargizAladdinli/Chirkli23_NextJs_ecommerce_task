@@ -247,7 +247,7 @@ ul {
 #all .mobile-menu {
   width: 100%;
   position: absolute;
-  top: 100%;
+  top: 130%;
   z-index: 999;
   left: 0;
   right: 0;
@@ -279,7 +279,7 @@ ul {
   transform: scaleY(1) translateY(0);
   width: 100%;
   position: absolute;
-  top: 100%;
+  top: 130%;
   z-index: 999;
   left: 0;
   right: 0;
@@ -304,6 +304,75 @@ ul {
 }
 #all .responsive .mobile-list li a:hover {
   color: #de5499;
+}
+#all .close {
+  background: none;
+  position: relative;
+}
+#all .close::before {
+  width: 40px;
+  height: 5px;
+  position: absolute;
+  top: -9px;
+  left: 0;
+  content: "";
+  background: #de5499;
+  transition: all 0.5s ease-in-out;
+}
+#all .close::after {
+  width: 40px;
+  height: 5px;
+  position: absolute;
+  top: 9px;
+  left: 0;
+  content: "";
+  background: #de5499;
+  transition: all 0.5s ease-in-out;
+}
+#all .close span {
+  width: 40px;
+  height: 5px;
+  opacity: 1;
+  display: block;
+  background: #de5499;
+  visibility: visible;
+  transition: all 0.5s ease-in-out;
+}
+#all .open {
+  background: none;
+  position: relative;
+}
+#all .open::before {
+  width: 40px;
+  height: 5px;
+  position: absolute;
+  top: -9px;
+  left: 0;
+  content: "";
+  background: #de5499;
+  transition: all 0.5s ease-in-out;
+  transform: rotate(45deg) translate(5px, 5px);
+}
+#all .open::after {
+  width: 40px;
+  height: 5px;
+  position: absolute;
+  top: 9px;
+  left: 0;
+  content: "";
+  background: #de5499;
+  transition: all 0.5s ease-in-out;
+  transform: rotate(-45deg);
+  transform: rotate(-45deg) translate(8px, -7px);
+}
+#all .open span {
+  width: 40px;
+  height: 5px;
+  opacity: 0;
+  display: block;
+  background: #de5499;
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
 }
 
 #swiper-head {
