@@ -271,8 +271,26 @@ ul {
   padding-right: 21px;
   display: block;
 }
+#all .mobile-menu .mobile-list li a svg {
+  position: absolute;
+  bottom: 22%;
+  right: 14px;
+  font-size: 25px;
+}
 #all .mobile-menu .mobile-list li a:hover {
   color: #de5499;
+}
+#all .mobile-menu .mobile-list li .dropdown {
+  height: 280px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s linear;
+}
+#all .mobile-menu .mobile-list li .dropup {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s linear;
 }
 #all .responsive {
   visibility: visible;
@@ -291,6 +309,7 @@ ul {
 #all .responsive .mobile-list li {
   width: 100%;
   display: block;
+  position: relative;
 }
 #all .responsive .mobile-list li a {
   text-decoration: none;
@@ -304,6 +323,24 @@ ul {
 }
 #all .responsive .mobile-list li a:hover {
   color: #de5499;
+}
+#all .responsive .mobile-list li a svg {
+  position: absolute;
+  bottom: 22%;
+  right: 14px;
+  font-size: 25px;
+}
+#all .responsive .mobile-list li .dropdown {
+  height: 280px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s linear;
+}
+#all .responsive .mobile-list li .dropup {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s linear;
 }
 #all .close {
   background: none;
