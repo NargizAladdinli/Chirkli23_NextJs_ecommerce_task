@@ -23,8 +23,8 @@ const Header = () => {
        <header id="header">
         <div className="container">
             <div className="all-content">
-                <MobileMenu/>
                 <div className="logo">
+                <MobileMenu/>
                     <Link href='/'>
                         <span>ChiRkLi</span>
                     </Link>

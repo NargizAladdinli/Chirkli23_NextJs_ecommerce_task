@@ -108,6 +108,7 @@ ul {
 #header {
   padding-top: 30px;
   font-family: "Michroma", sans-serif;
+  position: relative;
 }
 #header .all-content {
   display: flex;
@@ -118,6 +119,18 @@ ul {
   #header .all-content {
     justify-content: space-around;
   }
+}
+@media (max-width: 1024px) {
+  #header .all-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+#header .all-content .logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 @media (max-width: 540px) {
   #header .all-content .logo a {
@@ -151,12 +164,6 @@ ul {
 }
 #header .all-content .menu .list li a svg {
   font-size: 23px;
-}
-#header .all-content .menu .list li .active {
-  color: #de5499;
-}
-#header .all-content .menu .list li .nonactive {
-  color: inherit;
 }
 #header .all-content .menu .list li .dropdown {
   color: #264143;
@@ -215,6 +222,88 @@ ul {
   #header .all-content .other .user {
     display: none;
   }
+}
+
+.active {
+  color: #de5499;
+}
+
+.nonactive {
+  color: inherit;
+}
+
+.deactive {
+  color: #264143;
+}
+
+#all {
+  display: none;
+}
+@media (max-width: 1024px) {
+  #all {
+    display: block;
+  }
+}
+#all .mobile-menu {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform-origin: 0 0;
+  transform: scaleY(0) translateY(0);
+  transition: all 0.5s ease;
+}
+#all .mobile-menu .mobile-list li {
+  width: 100%;
+  display: block;
+}
+#all .mobile-menu .mobile-list li a {
+  text-decoration: none;
+  font-size: 15px;
+  border-bottom: 1px solid #dfdcdc;
+  padding: 12px 20px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  padding-right: 21px;
+  display: block;
+}
+#all .mobile-menu .mobile-list li a:hover {
+  color: #de5499;
+}
+#all .responsive {
+  visibility: visible;
+  transform: scaleY(1) translateY(0);
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  background-color: #fff;
+  transform-origin: 0 0;
+  transition: all 0.5s ease;
+}
+#all .responsive .mobile-list li {
+  width: 100%;
+  display: block;
+}
+#all .responsive .mobile-list li a {
+  text-decoration: none;
+  font-size: 15px;
+  border-bottom: 1px solid #dfdcdc;
+  padding: 12px 20px;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  padding-right: 21px;
+  display: block;
+}
+#all .responsive .mobile-list li a:hover {
+  color: #de5499;
 }
 
 #swiper-head {

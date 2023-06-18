@@ -1,10 +1,15 @@
 #header{
     padding-top: 30px;
     font-family: 'Michroma', sans-serif;
+    position: relative;
     .all-content{
         @include Flex($a_items:center,$j_content:space-between);
         @media (max-width:540px) { justify-content: space-around; }
+        @media (max-width:1024px) {
+            @include Flex($a_items:center,$j_content:space-around);
+        }
         .logo{
+            @include Flex($gap:15px,$a_items:center);
             a{ 
                 @extend %_logo;
                 @media (max-width:540px) { font-size: 25px; }
@@ -29,8 +34,6 @@
                         &:hover{ color: $de_clr; }
                         svg{ font-size: $size_23; }
                     }
-                    .active{ color: $de_clr; }
-                    .nonactive{ color: inherit; }
                     .dropdown{
                         @include Text($ground:$white_clr,$colrs:$body_clr,$border:1px solid $ec_clr,$radius:$radius_10);
                         @include Img($pos:absolute,$left:0,$opacity:0,$wid:200px,$z_index:9999);
@@ -68,6 +71,60 @@
             }
             .user{
                 @media (max-width:540px) { display: none; }
+            }
+        }
+    }
+}
+.active{ color: $de_clr; }
+.nonactive{ color: inherit; }
+.deactive{ color: $body_clr;}
+#all{
+    display: none;
+    @media (max-width:1024px) { display: block; }
+    .mobile-menu{
+        @include Img($wid:100%,$pos:absolute,$top:100%,$left:0,$right:0,$z_index:999,$opacity:0);
+        visibility: hidden;
+        transform-origin: 0 0;
+        transform: scaleY(0) translateY(0);
+        transition: all 0.5s ease;
+        .mobile-list{
+            li{
+                width: 100%;
+                display: block;
+                a{ 
+                    @include Text($f_size:$size_15,$t_decoration:none);
+                    border-bottom: 1px solid #dfdcdc;
+                    padding: 12px 20px;
+                    position: relative;
+                    transition: .3s ease-in-out;
+                    padding-right: 21px;
+                    display: block;
+                    &:hover{ color: $de_clr; }
+                }
+            }
+        }
+    }
+    .responsive{
+        visibility: visible;
+        transform: scaleY(1) translateY(0);
+        @include Img($wid:100%,$pos:absolute,$top:100%,$left:0,$right:0,$z_index:999,$opacity:1);
+        background-color: $white_clr;
+        transform-origin: 0 0;
+        transition: all 0.5s ease;
+        .mobile-list{
+            li{
+                width: 100%;
+                display: block;
+                a{ 
+                    @include Text($f_size:$size_15,$t_decoration:none);
+                    border-bottom: 1px solid #dfdcdc;
+                    padding: 12px 20px;
+                    position: relative;
+                    transition: .3s ease-in-out;
+                    padding-right: 21px;
+                    display: block;
+                    &:hover{ color: $de_clr; }
+                }
             }
         }
     }

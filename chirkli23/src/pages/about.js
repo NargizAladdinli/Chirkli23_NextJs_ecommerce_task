@@ -1,5 +1,6 @@
 import AboutUs from "@/components/about/AboutUs"
 import Heading from "@/components/about/Heading"
+import Scrolltotop from "@/components/scroll/Scrolltotop"
 import Head from "next/head"
 
 export default function About() {
@@ -15,6 +16,7 @@ export default function About() {
         <Heading/>
         <AboutUs/>
     </main>
+    <Scrolltotop/>
     </>
   )
 }
