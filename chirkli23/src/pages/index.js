@@ -5,10 +5,8 @@ import Collapse from "@/components/Collapse/Collapse";
 import SwiperOne from "@/components/swiper/SwiperOne";
 import SwiperTwo from "@/components/swiper/SwiperTwo";
 import Products from "@/components/products/Products";
-import { useContext } from "react";
 
 export default function Home( ) {
-  // const { product} = useContext();
   return (
     <>
       <Head>

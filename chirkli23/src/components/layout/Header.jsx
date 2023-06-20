@@ -4,11 +4,14 @@ import { FaShoppingCart, FaUser, FaSearch, FaMoon, FaSun, FaAngleDown } from "re
 import { useContext, useEffect } from "react";
 import { ThemeContext } from "@/context/theme.context";
 import MobileMenu from "./Mobile";
+import { SidebarContext } from "@/context/Sidebar";
+import SideBar from "../sidebar/SideBar.components";
 
 const Header = () => {
     const router =useRouter();
     const current = router.pathname;
     const {theme, setTheme} = useContext(ThemeContext)
+    const {open, setOpen} = useContext(SidebarContext);
 
     
     useEffect(() => {
@@ -131,15 +134,14 @@ const Header = () => {
                             <FaUser/>
                         </Link>
                     </div>
-                    <div className="item cart">
-                        <Link href='#'>
-                            <FaShoppingCart/>
-                            <span>0</span>
-                        </Link>
+                    <div onClick={() => setOpen(!open)}  className="item cart">
+                        <FaShoppingCart/>
+                        <span>0</span>
                     </div>
                 </div>
             </div>
         </div>
+        <SideBar/>
        </header>
     )
 }

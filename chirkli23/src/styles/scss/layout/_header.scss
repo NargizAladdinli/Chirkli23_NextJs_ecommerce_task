@@ -53,15 +53,14 @@
         .other{
             @include Flex($gap:20px,$a_items:center);
             .item{
-                a{
-                    font-family: 'Poppins', sans-serif;
-                    @include Text($t_decoration:none,$colrs:inherit,$f_size:$size_20);
-                    position: relative;
-                    span{
-                        @include Img($pos:absolute,$top:-14px,$wid:25px,$heit:25px);
-                        @include Text($t_align:center,$f_size:$size_14,$radius:$radius_50,$l_heit:26px,$ground:$de_clr);
-                    }
+                position: relative;
+                @include Text($t_decoration:none,$colrs:inherit,$f_size:$size_20);
+                font-family: 'Poppins', sans-serif;
+                span{
+                    @include Img($pos:absolute,$top:-14px,$wid:25px,$heit:25px);
+                    @include Text($t_align:center,$f_size:$size_14,$radius:$radius_50,$l_heit:26px,$ground:$de_clr);
                 }
+                a{ @include Text($t_decoration:none,$colrs:inherit,$f_size:$size_20); }
                 button{
                     @include Text($ground:$de_clr,$colrs:inherit,$radius:$radius_50,$l_heit:1px,$f_size:$size_20);
                     @include Img($wid:40px,$heit:40px);

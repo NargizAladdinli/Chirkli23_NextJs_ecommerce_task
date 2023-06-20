@@ -8,10 +8,10 @@ const Products = () => {
   return (
     <section id="products">
       <div className="container">
-        <div className="row">
+        <div className="row g-3">
           {product.slice(4, 8).map((cart) => {
             return (
-              <div key={cart.id} className="col-lg-3">
+              <div key={cart.id} className="col-sm-6 col-md-4 col-lg-3">
                 <div className="carts">
                   <div className="img">
                     <Link href="#">

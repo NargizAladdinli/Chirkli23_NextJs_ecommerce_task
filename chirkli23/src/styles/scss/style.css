@@ -105,6 +105,16 @@ ul {
   background: #8c3560;
 }
 
+#products .carts .add-cart a button {
+  padding: 10px 30px;
+  color: #264143;
+  font-size: 16px;
+  font-weight: 700;
+  background: #e99f4c;
+  border-radius: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
 #header {
   padding-top: 30px;
   font-family: "Michroma", sans-serif;
@@ -191,14 +201,14 @@ ul {
   align-items: center;
   gap: 20px;
 }
-#header .all-content .other .item a {
-  font-family: "Poppins", sans-serif;
+#header .all-content .other .item {
+  position: relative;
   text-decoration: none;
   color: inherit;
   font-size: 20px;
-  position: relative;
+  font-family: "Poppins", sans-serif;
 }
-#header .all-content .other .item a span {
+#header .all-content .other .item span {
   width: 25px;
   height: 25px;
   position: absolute;
@@ -208,6 +218,11 @@ ul {
   background: #de5499;
   line-height: 26px;
   border-radius: 50px;
+}
+#header .all-content .other .item a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 20px;
 }
 #header .all-content .other .item button {
   color: inherit;
@@ -714,16 +729,43 @@ ul {
   left: 25%;
   opacity: 0;
   visibility: hidden;
-  padding: 10px 30px;
-  color: #264143;
-  font-size: 16px;
-  font-weight: 700;
-  background: #e99f4c;
-  border-radius: 15px;
-  transition: all 0.5s ease-in-out;
 }
 #products .carts .add-cart a button:hover {
   background-color: #de5499;
+}
+
+.open {
+  width: 25%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  z-index: 111;
+  right: 0;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  overflow-x: hidden;
+}
+@media (max-width: 768px) {
+  .open {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .open {
+    width: 50%;
+  }
+}
+
+.closes {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  z-index: 111;
+  right: 0;
+  background-color: #fff;
+  transition: all 0.5s ease-in-out;
+  overflow-x: hidden;
 }
 
 #footer .footer-first {
