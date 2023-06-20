@@ -1,0 +1,72 @@
+#products{
+    padding-top: 70px;
+    .carts{
+        font-family: 'Jost', sans-serif;
+        &:hover{
+            .img{
+                .pos-one{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                .pos-two{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            .add-cart{
+                p{
+                    opacity: 0;
+                    visibility: hidden;
+                }
+                button{
+                    opacity: 1;
+                    visibility: visible;
+                    top: 0;
+                }
+            }
+        }
+        .img{
+            @include Img($wid:100%,$pos:relative,$flow:hidden);
+            border-radius: $radius_10;
+            transition: all 0.5s ease;
+            img{
+                @include Img($wid:100%,$heit:100%,$o_fit:cover,);
+                transition: all 0.7s linear;
+            }
+            .pos-one{
+                opacity: 1;
+                visibility: visible;
+            }
+            .pos-two{
+                @include Img($pos:absolute,$top:0,$left:0,$opacity:0);
+                visibility: hidden;
+            }
+        }
+        .content{
+            text-align: center;
+            margin-top: 20px;
+            a{
+                @include Text($t_decoration:none,$colrs:inherit,$f_size:$size_16,$f_weight:$weight_700);
+                transition: all 0.3s ease-in-out;
+                &:hover{ color: $de_clr; }
+            }
+        }
+        .add-cart{
+            text-align: center;
+            position: relative;
+            a{
+                @include Text($f_size:$size_18,$f_weight:$weight_700,$t_decoration:none,$colrs:inherit);
+                button{
+                    @include Img($pos:absolute,$top:100%,$left:25%,$opacity:0);
+                    visibility: hidden;
+                    padding: 10px 30px;
+                    @include Text($f_weight:$weight_700,$f_size:$size_16,$colrs:$body_clr,$ground:$e9_clr,$radius:$radius_15);
+                    transition: all 0.5s ease-in-out;
+                    &:hover{
+                        background-color: $de_clr;
+                    }
+                }
+            }
+        }
+    }
+}
