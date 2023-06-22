@@ -2,7 +2,8 @@
     @include Img($wid:25%,$heit:100vh,$pos:absolute,$top:0,$right:0,$z_index:111);
     background-color: #fff;
     transition: all 0.5s ease-in-out;
-    overflow-x: hidden;
+    opacity: 1;
+    visibility: visible;
     @media (max-width:768px) { width: 100%; }
     @media (max-width:1024px) and (min-width:768px) { width: 50%; }
 }
@@ -10,5 +11,6 @@
     @include Img($heit:0,$wid:0,$pos:absolute,$top:0,$right:0,$z_index:111);
     background-color: #fff;
     transition: all 0.5s ease-in-out;
-    overflow-x: hidden;
+    opacity: 0;
+    visibility: hidden;
 }
