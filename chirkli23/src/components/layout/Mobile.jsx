@@ -17,7 +17,7 @@ const MobileMenu = () => {
                     </li>
                     <li>
                         <Link href="#" onClick={() => setDown(!down)} className={current === 'men' ? "active" : "deactive"}>Men {down ? <FaAngleUp/> : <FaAngleDown/>}</Link>
-                        <ul className={down ? "dropdown" : "dropup"}>
+                        {/* <ul className={down ? "dropdown" : "dropup"}>
                                 <li className="pad">
                                     <Link href='#' className={current === 'men' ? 'active' : 'deactive'} style={{paddingLeft:"40px"}}>Hoodie</Link>
                                 </li>
@@ -36,11 +36,11 @@ const MobileMenu = () => {
                                 <li className="pad">
                                     <Link href='#' className={current === 'men' ? 'active' : 'deactive'} style={{paddingLeft:"40px"}}>Shoes</Link>
                                 </li>
-                            </ul>
+                            </ul> */}
                     </li>
                     <li>
                         <Link href="#" onClick={() => setDown(!down)} className={current === 'women' ? "active" : "deactive"}>Women {down ? <FaAngleUp/> : <FaAngleDown/>}</Link>
-                        <ul className={down ? "dropdown" : "dropup"}>
+                        {/* <ul className={down ? "dropdown" : "dropup"}>
                                 <li className="pad">
                                     <Link href='#' className={current === 'women' ? 'active' : 'deactive'} style={{paddingLeft:"40px"}}>Hoodie</Link>
                                 </li>
@@ -59,11 +59,11 @@ const MobileMenu = () => {
                                 <li className="pad">
                                     <Link href='#' className={current === 'women' ? 'active' : 'deactive'} style={{paddingLeft:"40px"}}>Shoes</Link>
                                 </li>
-                            </ul>
+                            </ul> */}
                     </li>
                     <li>
                         <Link href="#" className={current === 'kids' ? "active" : "deactive"}>Kids</Link>
-                        <ul className={down ? "dropdown" : "dropup"}>
+                        {/* <ul className={down ? "dropdown" : "dropup"}>
                                 <li className="pad">
                                     <Link href='#' className={current === 'kids' ? 'active' : 'deactive'} style={{paddingLeft:"40px"}}>Hoodie</Link>
                                 </li>
@@ -82,7 +82,7 @@ const MobileMenu = () => {
                                 <li className="pad">
                                     <Link href='#' className={current === 'kids' ? 'active' : 'deactive'} style={{paddingLeft:"40px"}}>Shoes</Link>
                                 </li>
-                            </ul>
+                            </ul> */}
                     </li>
                     <li>
                         <Link href="#" className={current === 'about' ? "active" : "deactive"}>About</Link>

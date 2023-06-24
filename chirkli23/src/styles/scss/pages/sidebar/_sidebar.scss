@@ -1,16 +1,29 @@
-.open{
-    @include Img($wid:25%,$heit:100vh,$pos:absolute,$top:0,$right:0,$z_index:111);
+.sideopen{
+    @include Img($wid:25%,$heit:100vh,$pos:absolute,$top:0,$right:0,$z_index:111,$opacity:1);
     background-color: #fff;
     transition: all 0.5s ease-in-out;
-    opacity: 1;
+    overflow-x: hidden;
     visibility: visible;
     @media (max-width:768px) { width: 100%; }
     @media (max-width:1024px) and (min-width:768px) { width: 50%; }
+    .items{
+        padding: 30px;
+        color: $body_clr;
+        .sidebtn{
+            @include Flex($j_content:space-between,$a_items:center);
+            h4{
+                @include Text($f_size:$size_18,$f_weight:$weight_700);
+                font-family: 'Poppins', sans-serif;
+            }
+            button{ @include Text($ground:none,$f_size:$size_25,$f_weight:$weight_700); }
+        }
+    }
 }
-.closes{
-    @include Img($heit:0,$wid:0,$pos:absolute,$top:0,$right:0,$z_index:111);
+.sideclose{
+    @include Img($heit:0,$wid:0,$pos:absolute,$top:0,$right:0,$z_index:111,$opacity:0);
     background-color: #fff;
     transition: all 0.5s ease-in-out;
-    opacity: 0;
+    overflow-x: hidden;
     visibility: hidden;
+    .items{ display: none; }
 }

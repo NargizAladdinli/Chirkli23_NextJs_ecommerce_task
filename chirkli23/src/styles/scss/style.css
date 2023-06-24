@@ -203,6 +203,7 @@ ul {
 }
 #header .all-content .other .item {
   position: relative;
+  cursor: pointer;
   text-decoration: none;
   color: inherit;
   font-size: 20px;
@@ -272,40 +273,9 @@ ul {
   transform: scaleY(0) translateY(0);
   transition: all 0.5s ease;
 }
-#all .mobile-menu .mobile-list li {
-  width: 100%;
-  display: block;
-}
-#all .mobile-menu .mobile-list li a {
-  text-decoration: none;
-  font-size: 15px;
-  border-bottom: 1px solid #dfdcdc;
-  padding: 12px 20px;
-  position: relative;
-  transition: 0.3s ease-in-out;
-  padding-right: 21px;
-  display: block;
-}
-#all .mobile-menu .mobile-list li a svg {
-  position: absolute;
-  bottom: 22%;
-  right: 14px;
-  font-size: 25px;
-}
-#all .mobile-menu .mobile-list li a:hover {
-  color: #de5499;
-}
-#all .mobile-menu .mobile-list li .dropdown {
-  height: 280px;
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.3s linear;
-}
-#all .mobile-menu .mobile-list li .dropup {
-  height: 0;
+#all .mobile-menu .mobile-list {
   opacity: 0;
   visibility: hidden;
-  transition: all 0.3s linear;
 }
 #all .responsive {
   visibility: visible;
@@ -734,38 +704,64 @@ ul {
   background-color: #de5499;
 }
 
-.open {
+.sideopen {
   width: 25%;
   height: 100vh;
   position: absolute;
   top: 0;
   z-index: 111;
   right: 0;
+  opacity: 1;
   background-color: #fff;
   transition: all 0.5s ease-in-out;
   overflow-x: hidden;
+  visibility: visible;
 }
 @media (max-width: 768px) {
-  .open {
+  .sideopen {
     width: 100%;
   }
 }
 @media (max-width: 1024px) and (min-width: 768px) {
-  .open {
+  .sideopen {
     width: 50%;
   }
 }
+.sideopen .items {
+  padding: 30px;
+  color: #264143;
+}
+.sideopen .items .sidebtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sideopen .items .sidebtn h4 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+.sideopen .items .sidebtn button {
+  font-size: 25px;
+  font-weight: 700;
+  background: none;
+}
 
-.closes {
+.sideclose {
   width: 0;
   height: 0;
   position: absolute;
   top: 0;
   z-index: 111;
   right: 0;
+  opacity: 0;
   background-color: #fff;
   transition: all 0.5s ease-in-out;
   overflow-x: hidden;
+  visibility: hidden;
+}
+.sideclose .items {
+  display: none;
 }
 
 #footer .footer-first {
