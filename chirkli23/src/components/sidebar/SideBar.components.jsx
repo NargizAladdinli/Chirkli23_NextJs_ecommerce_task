@@ -1,7 +1,7 @@
 import { SidebarContext } from "@/context/Sidebar";
 import { useContext } from "react";
-// import { FaLongArrowAltRight } from "react-icons/fa";
 import { CartContext } from "@/context/cart.context";
+import CartItem from "../products/CartItem";
 
 const SideBar = () => {
   const { cart } = useContext(CartContext);
@@ -13,10 +13,10 @@ const SideBar = () => {
           <h4>Shopping Bag (0)</h4>
           <button onClick={handleClose}>X</button>
         </div>
-        <div className="carItem">
-          {cart.map((item) => {
-            return <div>Cart </div>;
-          })}
+        <div className="cartitem">
+            {cart.map((item) => {
+                return <CartItem item={item} key={item.id}/>;
+            })}
         </div>
       </div>
     </div>

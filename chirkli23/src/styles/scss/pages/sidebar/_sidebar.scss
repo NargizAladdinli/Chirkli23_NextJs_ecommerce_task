@@ -10,12 +10,22 @@
         padding: 30px;
         color: $body_clr;
         .sidebtn{
-            @include Flex($j_content:space-between,$a_items:center);
+            @include Flex($j_content:space-between,$a_items:center);    
             h4{
                 @include Text($f_size:$size_18,$f_weight:$weight_700);
                 font-family: 'Poppins', sans-serif;
             }
             button{ @include Text($ground:none,$f_size:$size_25,$f_weight:$weight_700); }
+        }
+        .cartitem{
+            .carts{
+                @include Flex();
+                padding-top: 20px;
+                .img{
+                    width: 80px;
+                    img{ @include Img($wid:100%,$heit:100%,$o_fit:cover); }
+                }
+            }
         }
     }
 }

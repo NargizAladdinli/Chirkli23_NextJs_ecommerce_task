@@ -283,7 +283,7 @@ ul {
   width: 100%;
   position: absolute;
   top: 130%;
-  z-index: 999;
+  z-index: 2;
   left: 0;
   right: 0;
   opacity: 1;
@@ -745,6 +745,19 @@ ul {
   font-size: 25px;
   font-weight: 700;
   background: none;
+}
+.sideopen .items .cartitem .carts {
+  display: flex;
+  padding-top: 20px;
+}
+.sideopen .items .cartitem .carts .img {
+  width: 80px;
+}
+.sideopen .items .cartitem .carts .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .sideclose {

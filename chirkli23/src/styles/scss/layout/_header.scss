@@ -88,40 +88,12 @@
         .mobile-list{
             opacity: 0;
             visibility: hidden;
-            // li{
-            //     width: 100%;
-            //     display: block;
-            //     a{ 
-            //         @include Text($f_size:$size_15,$t_decoration:none);
-            //         border-bottom: 1px solid #dfdcdc;
-            //         padding: 12px 20px;
-            //         position: relative;
-            //         transition: .3s ease-in-out;
-            //         padding-right: 21px;
-            //         display: block;
-            //         svg{
-            //             @include Img($pos:absolute,$botom:22%,$right:14px);
-            //             font-size: 25px;
-            //         }
-            //         &:hover{ color: $de_clr; }
-            //     }
-            //     .dropdown{
-            //         @include Img($heit:280px,$opacity:1);
-            //         visibility: visible;
-            //         transition: all 0.3s linear;
-            //     }
-            //     .dropup{
-            //         @include Img($heit:0,$opacity:0);
-            //         visibility: hidden;
-            //         transition: all 0.3s linear;
-            //     }
-            // }
         }
     }
     .responsive{
         visibility: visible;
         transform: scaleY(1) translateY(0);
-        @include Img($wid:100%,$pos:absolute,$top:130%,$left:0,$right:0,$z_index:999,$opacity:1);
+        @include Img($wid:100%,$pos:absolute,$top:130%,$left:0,$right:0,$z_index:2,$opacity:1);
         background-color: $white_clr;
         transform-origin: 0 0;
         transition: all 0.5s ease;
