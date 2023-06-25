@@ -705,7 +705,7 @@ ul {
 }
 
 .sideopen {
-  width: 25%;
+  width: 50%;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -724,7 +724,7 @@ ul {
 }
 @media (max-width: 1024px) and (min-width: 768px) {
   .sideopen {
-    width: 50%;
+    width: 65%;
   }
 }
 .sideopen .items {
@@ -735,6 +735,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid rgba(127, 127, 127, 0.3019607843);
 }
 .sideopen .items .sidebtn h4 {
   font-size: 18px;
@@ -746,18 +747,67 @@ ul {
   font-weight: 700;
   background: none;
 }
-.sideopen .items .cartitem .carts {
-  display: flex;
-  padding-top: 20px;
+.sideopen .items .sidebtn button svg {
+  vertical-align: top;
 }
-.sideopen .items .cartitem .carts .img {
+.sideopen .items .cartitem {
+  font-family: "Poppins", sans-serif;
+  color: #264143;
+}
+.sideopen .items .cartitem .flex {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(159, 156, 156, 0.24);
+}
+.sideopen .items .cartitem .flex .carts .img {
   width: 80px;
 }
-.sideopen .items .cartitem .carts .img img {
+.sideopen .items .cartitem .flex .carts .img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.sideopen .items .cartitem .flex .carts .content {
+  padding-left: 20px;
+}
+.sideopen .items .cartitem .flex .carts .content a {
+  text-decoration: none;
+  color: #264143;
+  font-size: 17px;
+  transition: all 0.3s linear;
+}
+.sideopen .items .cartitem .flex .carts .content a:hover {
+  color: #de5499;
+}
+.sideopen .items .cartitem .flex .carts .content .boxing {
+  margin-top: 7px;
+  gap: 20px;
+}
+.sideopen .items .cartitem .flex .carts .content .boxing .title {
+  font-size: 16px;
+  border: 1px solid #de5499;
+  display: table;
+  padding: 3px 15px;
+}
+.sideopen .items .cartitem .flex .carts .content .boxing .title button {
+  background: none;
+}
+.sideopen .items .cartitem .flex .carts .content .boxing .title span {
+  margin: 20px;
+}
+.sideopen .items .cartitem .flex .carts .content .boxing .price .first-price {
+  color: gray;
+  font-size: 14px;
+  font-weight: 500;
+}
+.sideopen .items .cartitem .flex .carts .content .boxing .price .total-price {
+  font-size: 16px;
+  font-weight: 700;
+  padding-left: 70px;
 }
 
 .sideclose {

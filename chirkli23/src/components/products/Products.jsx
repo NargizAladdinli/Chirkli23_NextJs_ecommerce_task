@@ -28,7 +28,7 @@ const Products = () => {
                   </div>
                   <div className="add-cart">
                     <Link href="#">
-                    <p>{price}</p>
+                    <p>${price}</p>
                     <button onClick={() => addToCart(products, id)}>Add to Card</button>
                     </Link>
                   </div>
