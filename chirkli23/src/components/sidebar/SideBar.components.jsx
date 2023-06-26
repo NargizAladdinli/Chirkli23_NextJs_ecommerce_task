@@ -2,16 +2,16 @@ import { SidebarContext } from "@/context/Sidebar";
 import { useContext } from "react";
 import { CartContext } from "@/context/cart.context";
 import CartItem from "../products/CartItem";
-import { FaArrowAltCircleRight} from "react-icons/fa";
+import { FaArrowAltCircleRight, FaTrash} from "react-icons/fa";
 
 const SideBar = () => {
-  const { cart } = useContext(CartContext);
-  const { open, handleClose } = useContext(SidebarContext);
+  const { cart, clearCart } = useContext(CartContext);
+  const { open, handleClose, itemAmount } = useContext(SidebarContext);
   return (
     <div className={open ? "sideopen" : "sideclose"}>
       <div className="items">
         <div className="sidebtn">
-          <h4>Shopping Bag (0)</h4>
+          <h4>Shopping Bag {itemAmount}</h4>
           <button onClick={handleClose}><FaArrowAltCircleRight/></button>
         </div>
         <div className="cartitem">
@@ -20,6 +20,10 @@ const SideBar = () => {
             })}
         </div>
       </div>
+        <div className="sidebarbottom">
+          <div className="total"><span>Total:</span> $1000</div>
+          <div onClick={clearCart} className="trash"><FaTrash/></div>
+        </div>
     </div>
   );
 };

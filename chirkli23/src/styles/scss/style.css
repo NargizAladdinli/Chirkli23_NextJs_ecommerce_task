@@ -712,10 +712,16 @@ ul {
   z-index: 111;
   right: 0;
   opacity: 1;
-  background-color: #fff;
+  color: #264143;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   transition: all 0.5s ease-in-out;
   overflow-x: hidden;
   visibility: visible;
+  padding: 30px;
+  font-family: "Poppins", sans-serif;
 }
 @media (max-width: 768px) {
   .sideopen {
@@ -727,10 +733,6 @@ ul {
     width: 65%;
   }
 }
-.sideopen .items {
-  padding: 30px;
-  color: #264143;
-}
 .sideopen .items .sidebtn {
   display: flex;
   justify-content: space-between;
@@ -740,7 +742,6 @@ ul {
 .sideopen .items .sidebtn h4 {
   font-size: 18px;
   font-weight: 700;
-  font-family: "Poppins", sans-serif;
 }
 .sideopen .items .sidebtn button {
   font-size: 25px;
@@ -749,10 +750,6 @@ ul {
 }
 .sideopen .items .sidebtn button svg {
   vertical-align: top;
-}
-.sideopen .items .cartitem {
-  font-family: "Poppins", sans-serif;
-  color: #264143;
 }
 .sideopen .items .cartitem .flex {
   padding-top: 20px;
@@ -808,6 +805,29 @@ ul {
   font-size: 16px;
   font-weight: 700;
   padding-left: 70px;
+}
+.sideopen .sidebarbottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+.sideopen .sidebarbottom .total {
+  font-size: 17px;
+  font-weight: 700;
+}
+.sideopen .sidebarbottom .trash {
+  text-align: center;
+  background: #de5499;
+  line-height: 27px;
+  border-radius: 10px;
+  width: 50px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.sideopen .sidebarbottom .trash:hover {
+  background: #e99f4c;
 }
 
 .sideclose {

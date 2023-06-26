@@ -6,12 +6,14 @@ import { ThemeContext } from "@/context/theme.context";
 import MobileMenu from "./Mobile";
 import { SidebarContext } from "@/context/Sidebar";
 import SideBar from "../sidebar/SideBar.components";
+import { CartContext } from "@/context/cart.context";
 
 const Header = () => {
     const router =useRouter();
     const current = router.pathname;
     const {theme, setTheme} = useContext(ThemeContext)
     const {open, setOpen} = useContext(SidebarContext);
+    const {itemAmount} = useContext(CartContext);
 
     
     useEffect(() => {
@@ -136,7 +138,7 @@ const Header = () => {
                     </div>
                     <div onClick={() => setOpen(!open)}  className="item cart">
                         <FaShoppingCart/>
-                        <span>0</span>
+                        <span>{itemAmount}</span>
                     </div>
                 </div>
             </div>

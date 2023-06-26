@@ -4,7 +4,7 @@ import { CartContext } from "@/context/cart.context";
 import { useContext } from "react";
 
 const CartItem = ({ item }) => {
-  const {removeCart} = useContext(CartContext)
+  const {removeCart, increaseAmount, decreaseAmount} = useContext(CartContext)
   const { id, title, price, img, amount } = item;
   return (
     <div className="flex">
@@ -18,11 +18,11 @@ const CartItem = ({ item }) => {
           <Link href="#">{title}</Link>
           <div className="boxing d-flex align-items-center">
             <div className="title">
-              <button className="toggle">
+              <button onClick={() => decreaseAmount(id)} className="toggle">
                 <FaMinus />
               </button>
               <span>{amount}</span>
-              <button className="toggle">
+              <button onClick={() => increaseAmount(id)} className="toggle">
                 <FaPlus />
               </button>
             </div>

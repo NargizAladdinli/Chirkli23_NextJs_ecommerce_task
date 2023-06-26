@@ -1,29 +1,25 @@
 .sideopen{
     @include Img($wid:50%,$heit:100vh,$pos:absolute,$top:0,$right:0,$z_index:111,$opacity:1);
-    background-color: #fff;
+    @include Text($ground:$white_clr,$colrs:$body_clr);
+    @include Flex($j_content:space-between,$f_direction:column);
     transition: all 0.5s ease-in-out;
     overflow-x: hidden;
     visibility: visible;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
     @media (max-width:768px) { width: 100%; }
     @media (max-width:1024px) and (min-width:768px) { width: 65%; }
     .items{
-        padding: 30px;
-        color: $body_clr;
         .sidebtn{
             @include Flex($j_content:space-between,$a_items:center);   
             border-bottom: 1px solid $bottom_clr; 
-            h4{
-                @include Text($f_size:$size_18,$f_weight:$weight_700);
-                font-family: 'Poppins', sans-serif;
-            }
+            h4{  @include Text($f_size:$size_18,$f_weight:$weight_700); }
             button{ 
                 @include Text($ground:none,$f_size:$size_25,$f_weight:$weight_700);
                 svg{ vertical-align: top; }
              }
         }
         .cartitem{
-            font-family: 'Poppins', sans-serif;
-            color: $body_clr;
             .flex{
                 padding-top: 20px;
                 @include Flex($a_items:flex-start,$j_content:space-between);
@@ -63,6 +59,22 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    .sidebarbottom{
+        @include Flex($j_content:space-between,$a_items:center);
+        text-transform: uppercase;
+        .total{
+            @include Text($f_size:$size_17,$f_weight:$weight_700);
+        }
+        .trash{
+            @include Text($ground:$de_clr,$radius:$radius_10,$t_align:center,$l_heit:27px);
+            @include Img($wid:50px,$heit:30px);
+            cursor: pointer;
+            transition: all 0.3s linear;
+            &:hover{
+                @include Text($ground:$e9_clr);
             }
         }
     }
