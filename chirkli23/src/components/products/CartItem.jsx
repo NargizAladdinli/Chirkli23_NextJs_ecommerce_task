@@ -1,7 +1,10 @@
 import Link from "next/link";
 import { FaMinus, FaPlus, FaWindowClose } from "react-icons/fa";
+import { CartContext } from "@/context/cart.context";
+import { useContext } from "react";
 
 const CartItem = ({ item }) => {
+  const {removeCart} = useContext(CartContext)
   const { id, title, price, img, amount } = item;
   return (
     <div className="flex">
@@ -30,7 +33,7 @@ const CartItem = ({ item }) => {
           </div>
         </div>
       </div>
-      <button style={{ background: "none" }}>
+      <button onClick={() => removeCart(id)} style={{ background: "none" }}>
         <FaWindowClose />
       </button>
     </div>
