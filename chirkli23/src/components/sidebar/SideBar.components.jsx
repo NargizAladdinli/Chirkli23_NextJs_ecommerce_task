@@ -5,7 +5,7 @@ import CartItem from "../products/CartItem";
 import { FaArrowAltCircleRight, FaTrash} from "react-icons/fa";
 
 const SideBar = () => {
-  const { cart, clearCart } = useContext(CartContext);
+  const { cart, clearCart, total } = useContext(CartContext);
   const { open, handleClose, itemAmount } = useContext(SidebarContext);
   return (
     <div className={open ? "sideopen" : "sideclose"}>
@@ -21,7 +21,7 @@ const SideBar = () => {
         </div>
       </div>
         <div className="sidebarbottom">
-          <div className="total"><span>Total:</span> $1000</div>
+          <div className="total"><span>Total:</span> $ {parseFloat(total).toFixed(2)}</div>
           <div onClick={clearCart} className="trash"><FaTrash/></div>
         </div>
     </div>
