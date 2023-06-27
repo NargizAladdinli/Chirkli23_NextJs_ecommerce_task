@@ -40,10 +40,10 @@ const Header = () => {
                             <Link className={current === '/' ? 'active' : 'nonactive'} href="/">Home</Link>
                         </li>
                         <li>
-                            <Link className={current === 'men' ? 'active' : 'nonactive'} href="#">Men <FaAngleDown/> </Link>
+                            <Link className={current === '/hoodie' ? 'active' : 'nonactive'} href="#">Men <FaAngleDown/> </Link>
                             <ul className="dropdown">
                                 <li>
-                                    <Link href='#' className={current === 'men' ? 'active' : 'nonactive'}>Hoodie</Link>
+                                    <Link href='./hoodie' className={current === '/hoodie' ? 'active' : 'nonactive'}>Hoodie</Link>
                                 </li>
                                 <li>
                                     <Link href='#' className={current === 'men' ? 'active' : 'nonactive'}>Sweatshirt</Link>
@@ -112,7 +112,7 @@ const Header = () => {
                             <Link className={current === '/about' ? 'active' : 'nonactive'} href="#">About <FaAngleDown/></Link>
                             <ul className="dropdown">
                                 <li>
-                                    <Link href='./about' className={current === '/about' ? 'active' : 'nonactive'}>About us</Link>
+                                    <Link href='./about' className={current === 'about' ? 'active' : 'nonactive'}>About us</Link>
                                 </li>
                                 <li>
                                     <Link href='./about' className={current === 'about' ? 'active' : 'nonactive'}>FAQ</Link>

@@ -513,9 +513,6 @@ ul {
      object-fit: cover;
 }
 
-#percent {
-  padding-top: 70px;
-}
 #percent .percent-img {
   width: 100%;
   position: relative;
@@ -615,16 +612,40 @@ ul {
 }
 
 #heading {
-  background: url("https://demo.templatetrend.com/magento/MAG666/pub/static/version1560839252/frontend/Ortho/euforia/en_US/images/bradcome.jpg");
-  margin: 50px 0;
-  background-size: inherit;
-  background-position: inherit;
+  background: #9e9e9e;
+  margin-top: 70px;
   width: 100%;
-  height: 335px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#heading .title {
+  color: #264143;
+  text-align: center;
+  text-transform: uppercase;
+}
+#heading .title h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+#heading .title .link {
+  margin-top: 20px;
+}
+#heading .title .link a {
+  text-decoration: none;
+  color: #264143;
+  font-size: 17px;
+  transition: all 0.3s ease-in-out;
+}
+#heading .title .link a:hover {
+  color: #de5499;
 }
 
 #products {
   padding-top: 70px;
+  padding-bottom: 70px;
 }
 #products .carts {
   font-family: "Jost", sans-serif;
@@ -701,6 +722,18 @@ ul {
   left: 25%;
   opacity: 0;
   visibility: hidden;
+}
+@media (max-width: 768px) {
+  #products .carts .add-cart a button {
+    position: absolute;
+    left: 20%;
+  }
+}
+@media (max-width: 520px) {
+  #products .carts .add-cart a button {
+    position: absolute;
+    left: 35%;
+  }
 }
 #products .carts .add-cart a button:hover {
   background-color: #de5499;
@@ -847,6 +880,45 @@ ul {
 }
 .sideclose .items {
   display: none;
+}
+
+#notpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+}
+#notpage .title-page h1 {
+  color: #909090;
+  font-size: 21.875rem;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  #notpage .title-page h1 {
+    font-size: 200px;
+  }
+}
+#notpage .pages-content {
+  color: #909090;
+  text-align: center;
+}
+#notpage .pages-content h2 {
+  font-size: 4.75rem;
+  font-weight: 400;
+}
+#notpage .pages-content p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+#notpage .link-home {
+  margin-top: 20px;
+}
+#notpage .link-home a {
+  text-decoration: none;
+  color: inherit;
+  background: linear-gradient(124deg, #f95a85, #f70361, #f95420);
 }
 
 #footer .footer-first {

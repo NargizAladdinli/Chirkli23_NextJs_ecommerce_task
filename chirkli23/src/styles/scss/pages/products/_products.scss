@@ -1,5 +1,6 @@
 #products{
     padding-top: 70px;
+    padding-bottom: 70px;
     .carts{
         font-family: 'Jost', sans-serif;
         &:hover{
@@ -57,12 +58,18 @@
             a{
                 @include Text($f_size:$size_18,$f_weight:$weight_700,$t_decoration:none,$colrs:inherit);
                 button{
+                    @media (max-width:768px) {
+                        position: absolute;
+                        left: 20%;
+                    }
+                    @media (max-width:520px) {
+                        position: absolute;
+                        left: 35%;
+                    }
                     @include Img($pos:absolute,$top:100%,$left:25%,$opacity:0);
                     visibility: hidden;
                     @extend %_addcart;
-                    &:hover{
-                        background-color: $de_clr;
-                    }
+                    &:hover{ background-color: $de_clr; }
                 }
             }
         }

@@ -1,0 +1,26 @@
+#notpage{
+    @include Flex($j_content:center,$a_items:center,$f_direction:column);
+    padding-top: 100px;
+    .title-page{
+        h1{ 
+            @include Text($colrs:$notpage_clr,$f_size:$size_rem,$f_weight:$weight_400);
+            @media (max-width:768px) {
+                font-size: 200px;
+            }
+         }
+    }
+    .pages-content{
+        @include Text($colrs:$notpage_clr,$t_align:center);
+        h2{ @include Text($f_size:$size_page,$f_weight:$weight_400); }
+        p{
+            @include Text($f_size:$size_p,$f_weight:$weight_600);
+            margin-top: 20px;
+        }
+    }
+    .link-home{
+        margin-top: 20px;
+        a{
+            @include Text($t_decoration:none,$colrs:inherit,$ground:$gradient_clr);
+        }
+    }
+}

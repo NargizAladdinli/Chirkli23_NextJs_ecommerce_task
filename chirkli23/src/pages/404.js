@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Scrolltotop from "@/components/scroll/Scrolltotop";
+import Link from "next/link";
 const NotFound = () => {
     return(
         <>
@@ -10,7 +11,18 @@ const NotFound = () => {
           <link rel="icon" href="https://cdn.shopify.com/s/files/1/0607/7287/6512/files/favicon_d5c9515a-64b4-47af-9ef1-236eddcc39a8_16x16.png?v=1637219740" />
         </Head>
         <main>
-          <h1>404</h1>
+          <section id="notpage">
+            <div className="title-page">
+              <h1>404</h1>
+            </div>
+            <div className="pages-content">
+              <h2>Sorry, Page Not Found</h2>
+              <p>The page you requested could not be found</p>
+            </div>
+            <div className="link-home">
+              <Link href='/'>go back home</Link>
+            </div>
+          </section>
         </main>
         <Scrolltotop/>
       </>

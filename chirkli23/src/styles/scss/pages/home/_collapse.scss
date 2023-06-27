@@ -1,5 +1,4 @@
 #percent{
-    padding-top: 70px;
     .percent-img{
         @include Img($wid:100%,$pos:relative);
         &::before{
