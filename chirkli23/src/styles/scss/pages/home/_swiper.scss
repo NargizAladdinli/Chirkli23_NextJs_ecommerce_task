@@ -23,7 +23,7 @@
                 a{
                     cursor: grab;
                     img {
-                        @include Img($wid:100%,$heit:100%,$o_fit:cover);
+                        @include Img($wid:100%,$heit:100%,$o_fit:cover,$o_pos:center);
                         display: block;
                     }
                 }

@@ -40,6 +40,27 @@ const Percent = () => {
             </div>
           </div>
         </div>
+        {/* <div className="row g-3">
+          <div className="col-lg-6">
+            <div className="row">
+              <div className="col-lg-12 pb-2">
+                <div className="blue">
+                 
+                </div>
+              </div>
+              <div className="col-lg-12 pt-3">
+                <div className="orange">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="col-lg-6">
+            <div className="pink">
+              
+            </div>
+          </div>
+        </div> */}
       </div>
     </section>
   );

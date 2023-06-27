@@ -34,17 +34,17 @@ const SwiperOne = () => {
         >
           <SwiperSlide>
             <Link href="#">
-            <img src="https://demo.templatetrend.com/magento/MAG666/pub/static/version1560839252/frontend/Ortho/euforia/en_US/images/banners/main-banner1.jpg" alt="" />
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/310060171060857.64685c4ddf421.jpg" alt="" />
             </Link>
           </SwiperSlide>
           <SwiperSlide>
             <Link href="#">
-            <img src="https://demo.templatetrend.com/magento/MAG666/pub/static/version1560839252/frontend/Ortho/euforia/en_US/images/banners/main-banner2.jpg" alt="" />
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/9ed8c5165422013.6407480d24113.jpg" alt="" />
             </Link>
           </SwiperSlide>
           <SwiperSlide>
             <Link href="#">
-            <img src="https://demo.templatetrend.com/magento/MAG666/pub/static/version1560839252/frontend/Ortho/euforia/en_US/images/banners/main-banner3.jpg" alt="" />
+            <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/cfa0a9171228055.646b909672abf.png" alt="" />
             </Link>
           </SwiperSlide>
           <div style={{display: "none"}} className="autoplay-progress" slot="container-end">

@@ -21,6 +21,18 @@
         }
         img{ @include Img($wid:100%,$heit:100%,$o_fit:cover); }
     }
+    // .blue{
+    //     background-color: #63cac9;
+    //     min-height: 360px;
+    // }
+    // .orange{
+    //     background: #febd97;
+    //     min-height: 360px;
+    // }
+    // .pink{
+    //     background: #ffa5c1;
+    //     min-height: 720px;
+    // }
 }
 #collapse{
     padding-top: 70px;
