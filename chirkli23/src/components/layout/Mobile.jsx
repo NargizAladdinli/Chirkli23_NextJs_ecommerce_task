@@ -62,29 +62,6 @@ const MobileMenu = () => {
                             </ul> */}
                     </li>
                     <li>
-                        <Link href="#" className={current === 'kids' ? "active" : "deactive"}>Kids</Link>
-                        {/* <ul className={down ? "dropdown" : "dropup"}>
-                                <li className="pad">
-                                    <Link href='#' className={current === 'kids' ? 'active' : 'deactive'} style={{paddingLeft:"40px"}}>Hoodie</Link>
-                                </li>
-                                <li className="pad">
-                                    <Link href='#' className={current === 'kids' ? 'active' : 'deactive'} style={{paddingLeft:"40px"}}>Sweatshirt</Link>
-                                </li>
-                                <li className="pad">
-                                    <Link href='#' className={current === 'kids' ? 'active' : 'deactive'} style={{paddingLeft:"40px"}}>T-shirt</Link>
-                                </li>
-                                <li className="pad">
-                                    <Link href='#' className={current === 'kids' ? 'active' : 'deactive'} style={{paddingLeft:"40px"}}>Hats</Link>
-                                </li>
-                                <li className="pad">
-                                    <Link href='#' className={current === 'kids' ? 'active' : 'deactive'} style={{paddingLeft:"40px"}}>Accessory</Link>
-                                </li>
-                                <li className="pad">
-                                    <Link href='#' className={current === 'kids' ? 'active' : 'deactive'} style={{paddingLeft:"40px"}}>Shoes</Link>
-                                </li>
-                            </ul> */}
-                    </li>
-                    <li>
                         <Link href="#" className={current === 'about' ? "active" : "deactive"}>About</Link>
                     </li>
                     <li>

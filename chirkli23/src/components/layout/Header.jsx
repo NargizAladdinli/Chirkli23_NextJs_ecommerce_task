@@ -86,29 +86,6 @@ const Header = () => {
                             </ul>
                         </li>
                         <li>
-                            <Link className={current === 'kids' ? 'active' : 'nonactive'} href="#">Kids <FaAngleDown/></Link>
-                            <ul className="dropdown">
-                                <li>
-                                    <Link href='#' className={current === 'kids' ? 'active' : 'nonactive'}>Hoodie</Link>
-                                </li>
-                                <li>
-                                    <Link href='#' className={current === 'kids' ? 'active' : 'nonactive'}>Sweatshirt</Link>
-                                </li>
-                                <li>
-                                    <Link href='#' className={current === 'kids' ? 'active' : 'nonactive'}>T-shirt</Link>
-                                </li>
-                                <li>
-                                    <Link href='#' className={current === 'kids' ? 'active' : 'nonactive'}>Hats</Link>
-                                </li>
-                                <li>
-                                    <Link href='#' className={current === 'kids' ? 'active' : 'nonactive'}>Accessory</Link>
-                                </li>
-                                <li>
-                                    <Link href='#' className={current === 'kids' ? 'active' : 'nonactive'}>Shoes</Link>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
                             <Link className={current === '/about' ? 'active' : 'nonactive'} href="#">About <FaAngleDown/></Link>
                             <ul className="dropdown">
                                 <li>

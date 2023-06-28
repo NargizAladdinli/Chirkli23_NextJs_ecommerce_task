@@ -8,10 +8,10 @@ const Percent = () => {
           <div className="col-lg-6">
             <div className="row">
               <div className="col-lg-12 pb-2">
-                <div className="percent-img">
+                <div style={{height:"315px"}} className="percent-img">
                   <Link href="#">
                     <img
-                      src="https://demo.templatetrend.com/magento/MAG666/pub/static/version1560839252/frontend/Ortho/euforia/en_US/images/banners/sub-banner1.jpg"
+                      src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/7d72f0168686031.643ef411c1764.png"
                       alt=""
                     />
                   </Link>
@@ -21,7 +21,7 @@ const Percent = () => {
                 <div className="percent-img">
                   <Link href="#">
                     <img
-                      src="https://demo.templatetrend.com/magento/MAG666/pub/static/version1560839252/frontend/Ortho/euforia/en_US/images/banners/sub-banner2.jpg"
+                      src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/b2cf0d150390965.62fd2667b58b6.png"
                       alt=""
                     />
                   </Link>
@@ -33,8 +33,7 @@ const Percent = () => {
             <div className="percent-img">
               <Link href="#">
               <img
-                src="https://demo.templatetrend.com/magento/MAG666/pub/static/version1560839252/frontend/Ortho/euforia/en_US/images/banners/sub-banner3.jpg"
-                alt=""
+                src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/169562109620915.60415e365681a.png"
               />
               </Link>
             </div>

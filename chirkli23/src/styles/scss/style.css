@@ -516,6 +516,8 @@ ul {
 #percent .percent-img {
   width: 100%;
   position: relative;
+  border-radius: 20px;
+  overflow: hidden;
 }
 #percent .percent-img::before {
   content: "";
@@ -526,7 +528,7 @@ ul {
   left: 0;
   right: 0;
   opacity: 0;
-  background: rgba(178, 37, 45, 0.25);
+  background: rgba(25, 172, 150, 0.388);
   transform: scaleY(1);
   transform-origin: 50%;
   transition-property: transform;
