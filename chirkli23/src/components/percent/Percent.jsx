@@ -7,17 +7,7 @@ const Percent = () => {
         <div className="row g-3">
           <div className="col-lg-6">
             <div className="row">
-              <div className="col-lg-12 pb-2">
-                <div style={{height:"315px"}} className="percent-img">
-                  <Link href="#">
-                    <img
-                      src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/7d72f0168686031.643ef411c1764.png"
-                      alt=""
-                    />
-                  </Link>
-                </div>
-              </div>
-              <div className="col-lg-12 pt-3">
+            <div className="col-lg-12">
                 <div className="percent-img">
                   <Link href="#">
                     <img
@@ -27,6 +17,17 @@ const Percent = () => {
                   </Link>
                 </div>
               </div>
+              <div className="col-lg-12">
+                <div style={{height:"295px"}} className="percent-img">
+                  <Link href="#">
+                    <img
+                      src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/7d72f0168686031.643ef411c1764.png"
+                      alt=""
+                    />
+                  </Link>
+                </div>
+              </div>
+             
             </div>
           </div>
           <div className="col-lg-6">

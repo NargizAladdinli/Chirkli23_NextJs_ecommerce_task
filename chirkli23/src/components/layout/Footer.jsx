@@ -87,15 +87,6 @@ const Footer = () => {
               <span className="site-map" style={{ fontSize: "17px" }}>
                 Subscribe Newsletter
               </span>
-              <form className="submit">
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Enter your email here"
-                />
-                <button type="submit">SUBSCRIBE</button>
-              </form>
               <div className="opening-time">
                 <span className="day">Monday - Friday/</span>
                 <span className="time">08:00 - 20:00</span>

@@ -14,15 +14,16 @@
   background-color: #e99f4c;
   color: #264143;
 }
-
-::root ::-webkit-scrollbar {
-  width: 20px;
+* ::-webkit-scrollbar {
+  width: 15px;
 }
-::root ::-webkit-scrollbar-track {
+* ::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
   border-radius: 10px;
 }
-::root ::-webkit-scrollbar-thumb {
-  background: red;
+* ::-webkit-scrollbar-thumb {
+  background-color: #e99f4c;
+  border-radius: 10px;
 }
 
 .dark {
@@ -125,12 +126,13 @@ ul {
   transition: all 0.5s ease-in-out;
 }
 
-#notpage .link-home a {
+#send .sendmesagge form button, #notpage .link-home a {
   padding: 15px 35px;
   display: block;
   text-decoration: none;
   color: #f2ebe9;
-  font-size: 20px;
+  font-size: 16px;
+  font-weight: 600;
   background: linear-gradient(124deg, #f95a85, #f70361, #f95420);
   border-radius: 15px;
   text-transform: uppercase;
@@ -942,6 +944,47 @@ ul {
 }
 #notpage .link-home a:hover {
   color: #264143;
+  filter: drop-shadow(5px 5px 30px #f95420);
+}
+
+#send {
+  padding: 50px 0;
+}
+#send .sendmesagge {
+  margin: auto;
+}
+#send .sendmesagge form .form-input {
+  width: 100%;
+  margin-top: 30px;
+}
+#send .sendmesagge form .form-input .input-control {
+  width: 100%;
+  padding: 10px 10px;
+  color: inherit;
+  background: transparent;
+  border: 1px solid rgb(127, 127, 127);
+}
+#send .sendmesagge form .form-input .input-control::-moz-placeholder {
+  color: inherit;
+}
+#send .sendmesagge form .form-input .input-control::placeholder {
+  color: inherit;
+}
+#send .sendmesagge form .form-input span {
+  display: block;
+}
+#send .sendmesagge form .form-input .text {
+  height: 160px;
+  resize: none;
+}
+#send .sendmesagge form .form-input:nth-child(1) {
+  margin-top: 0;
+}
+#send .sendmesagge form button {
+  margin-top: 20px;
+  color: #264143;
+}
+#send .sendmesagge form button:hover {
   filter: drop-shadow(5px 5px 30px #f95420);
 }
 

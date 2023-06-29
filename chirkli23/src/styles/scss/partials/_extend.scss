@@ -27,6 +27,6 @@
 %_notbutton{
     padding: 15px 35px;
     display: block;
-    @include Text($t_decoration:none,$colrs:$f2_clr,$ground:$gradient_clr,$t_transform:uppercase,$radius:$radius_15,$f_size:$size_20);
+    @include Text($t_decoration:none,$colrs:$f2_clr,$ground:$gradient_clr,$t_transform:uppercase,$radius:$radius_15,$f_size:$size_16,$f_weight:$weight_600);
     transition: all 0.5s ease-in-out;
 }
