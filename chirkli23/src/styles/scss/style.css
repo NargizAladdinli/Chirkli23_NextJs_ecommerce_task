@@ -889,10 +889,11 @@ ul {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 #notpage .title-page h1 {
-  color: #909090;
+  color: inherit;
   font-size: 21.875rem;
   font-weight: 400;
 }
@@ -902,7 +903,7 @@ ul {
   }
 }
 #notpage .pages-content {
-  color: #909090;
+  color: inherit;
   text-align: center;
 }
 #notpage .pages-content h2 {
@@ -918,9 +919,13 @@ ul {
   margin-top: 20px;
 }
 #notpage .link-home a {
+  padding: 15px 40px;
+  display: block;
   text-decoration: none;
-  color: inherit;
+  color: #f2ebe9;
   background: linear-gradient(124deg, #f95a85, #f70361, #f95420);
+  border-radius: 15px;
+  text-transform: uppercase;
 }
 
 #footer .footer-first {
