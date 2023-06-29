@@ -4,8 +4,8 @@
     padding-bottom: 100px;
     .title-page{
         h1{ 
-            @include Text($colrs:inherit,$f_size:$size_rem,$f_weight:$weight_400);
-            @media (max-width:768px) { font-size: 200px; }
+            @include Text($colrs:inherit,$f_size:230px,$f_weight:$weight_400);
+            @media (max-width:768px) { font-size: 100px; }
          }
     }
     .pages-content{
@@ -19,9 +19,11 @@
     .link-home{
         margin-top: 20px;
         a{
-            padding: 15px 40px;
-            display: block;
-            @include Text($t_decoration:none,$colrs:$f2_clr,$ground:$gradient_clr,$t_transform:uppercase,$radius:$radius_15);
+            @extend %_notbutton;
+            &:hover{
+                color: $body_clr;
+                filter: drop-shadow(5px 5px 30px #f95420);
+            }
         }
     }
 }

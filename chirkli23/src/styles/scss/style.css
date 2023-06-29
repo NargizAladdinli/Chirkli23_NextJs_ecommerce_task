@@ -115,6 +115,18 @@ ul {
   transition: all 0.5s ease-in-out;
 }
 
+#notpage .link-home a {
+  padding: 15px 35px;
+  display: block;
+  text-decoration: none;
+  color: #f2ebe9;
+  font-size: 20px;
+  background: linear-gradient(124deg, #f95a85, #f70361, #f95420);
+  border-radius: 15px;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+}
+
 #header {
   padding-top: 30px;
   font-family: "Michroma", sans-serif;
@@ -894,12 +906,12 @@ ul {
 }
 #notpage .title-page h1 {
   color: inherit;
-  font-size: 21.875rem;
+  font-size: 230px;
   font-weight: 400;
 }
 @media (max-width: 768px) {
   #notpage .title-page h1 {
-    font-size: 200px;
+    font-size: 100px;
   }
 }
 #notpage .pages-content {
@@ -918,14 +930,9 @@ ul {
 #notpage .link-home {
   margin-top: 20px;
 }
-#notpage .link-home a {
-  padding: 15px 40px;
-  display: block;
-  text-decoration: none;
-  color: #f2ebe9;
-  background: linear-gradient(124deg, #f95a85, #f70361, #f95420);
-  border-radius: 15px;
-  text-transform: uppercase;
+#notpage .link-home a:hover {
+  color: #264143;
+  filter: drop-shadow(5px 5px 30px #f95420);
 }
 
 #footer .footer-first {
