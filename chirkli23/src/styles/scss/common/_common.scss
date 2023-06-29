@@ -9,7 +9,18 @@
         background-color: #e99f4c;
         color: #264143;
      }
-}
+   }
+   ::root{
+      ::-webkit-scrollbar{
+         width: 20px;
+      }
+      ::-webkit-scrollbar-track{
+         border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb{
+         background: red;
+      }
+   }
 .dark {
    background-color: #264143;
    color: #f2ebe9;

@@ -15,6 +15,16 @@
   color: #264143;
 }
 
+::root ::-webkit-scrollbar {
+  width: 20px;
+}
+::root ::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+::root ::-webkit-scrollbar-thumb {
+  background: red;
+}
+
 .dark {
   background-color: #264143;
   color: #f2ebe9;
