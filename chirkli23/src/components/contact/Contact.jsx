@@ -1,6 +1,11 @@
+import { useRef } from "react";
+
 const Contacts = () => {
+    const form = useRef()
     const handleSubmit = (e) => {
         e.preventDefault();
+        const data = new FormData(e.target)
+        console.log(Object.fromEntries(data.entries()));
     }
     return(
         <section id="send">
@@ -12,7 +17,7 @@ const Contacts = () => {
                         </div>
                     </div>
                 <div className="sendmesagge col-lg-6">
-                <form onSubmit={handleSubmit}>
+                <form ref={form} onSubmit={handleSubmit}>
                             <div className="form-input">
                                 <input name="username" className="input-control"  type="text" placeholder="Enter your name"/>
                                 <span>Pleas enter your Name</span>

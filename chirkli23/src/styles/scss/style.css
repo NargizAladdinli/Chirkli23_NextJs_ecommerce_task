@@ -950,8 +950,14 @@ ul {
 #send {
   padding: 50px 0;
 }
-#send .sendmesagge {
-  margin: auto;
+#send .googlemap {
+  width: 100%;
+  height: 460px;
+}
+#send .googlemap iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
 }
 #send .sendmesagge form .form-input {
   width: 100%;
@@ -963,6 +969,7 @@ ul {
   color: inherit;
   background: transparent;
   border: 1px solid rgb(127, 127, 127);
+  border-radius: 10px;
 }
 #send .sendmesagge form .form-input .input-control::-moz-placeholder {
   color: inherit;
@@ -971,7 +978,10 @@ ul {
   color: inherit;
 }
 #send .sendmesagge form .form-input span {
-  display: block;
+  display: none;
+  margin-top: 10px;
+  color: #b42020;
+  font-size: 14px;
 }
 #send .sendmesagge form .form-input .text {
   height: 160px;

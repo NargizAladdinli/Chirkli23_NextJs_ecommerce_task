@@ -1,7 +1,13 @@
 #send{
     padding: 50px 0;
+    .googlemap{
+        @include Img($wid:100%,$heit:460px);
+        iframe{
+            @include Img($wid:100%,$heit:100%);
+            border-radius: $radius_15;
+        }
+    }
     .sendmesagge{
-        margin: auto;
         form{
             .form-input{
                 width: 100%;
@@ -9,11 +15,13 @@
                 .input-control{
                     width: 100%;
                     padding: 10px 10px;
-                    @include Text($ground:transparent,$colrs:inherit,$border:1px solid $rgb_127);
+                    @include Text($ground:transparent,$colrs:inherit,$border:1px solid $rgb_127,$radius:$radius_10);
                     &::placeholder{ color: inherit; }
                 }
                 span{
-                    display: block;
+                    display: none;
+                    margin-top: 10px;
+                    @include Text($f_size:$size_14,$colrs:$span_clr);
                 }
                 .text{
                     height: 160px;

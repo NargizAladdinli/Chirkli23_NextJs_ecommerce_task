@@ -16,10 +16,6 @@ const Header = () => {
     const {itemAmount} = useContext(CartContext);
 
     
-    useEffect(() => {
-        document.body.className = theme;
-        // localStorage.setItem('tema', theme);
-    },[theme])
     const handleTheme = () => {
         setTheme(theme === "dark" ? "light" : "dark")
     }
