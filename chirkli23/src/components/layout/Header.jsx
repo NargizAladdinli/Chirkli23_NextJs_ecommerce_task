@@ -93,7 +93,7 @@ const Header = () => {
                             </ul>
                         </li>
                         <li>
-                            <Link className={current === 'blog' ? 'active' : 'nonactive'} href="#">Blog</Link>
+                            <Link className={current === '/blog' ? 'active' : 'nonactive'} href="/blog">Blog</Link>
                         </li>
                         <li>
                             <Link className={current === '/contact' ? 'active' : 'nonactive'} href="/contact">Contact</Link>

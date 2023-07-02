@@ -14,7 +14,7 @@ const HoodieItems = () => {
           {product.map((products) => {
             const {id, img, imgUrl, title, price} = products
             return (
-              <div key={id} className="col-sm-6 col-md-4 col-lg-3 pb-4">
+              <div key={id} className="col-sm-6 col-md-5 col-lg-4 pb-4">
                 <div className="carts">
                   <div className="img">
                     <Link href="#">

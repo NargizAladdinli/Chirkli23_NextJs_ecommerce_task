@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/context/theme.context";
 import ProductProvider from "@/context/product.context";
 import SidebarProvider from "@/context/Sidebar";
 import CartProvider from "@/context/cart.context";
+import BlogProvider from "@/context/blogContext";
 
 export default function App({ Component, pageProps }) {
   return (
@@ -12,9 +13,11 @@ export default function App({ Component, pageProps }) {
       <SidebarProvider>
         <CartProvider>
         <ProductProvider>
+          <BlogProvider>
           <Layout>
             <Component {...pageProps} />
           </Layout>
+          </BlogProvider>
         </ProductProvider>
         </CartProvider>
       </SidebarProvider>

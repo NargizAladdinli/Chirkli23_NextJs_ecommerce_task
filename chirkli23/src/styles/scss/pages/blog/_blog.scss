@@ -1,0 +1,12 @@
+#blog{
+    padding-top: 50px;
+    .blog-cart{
+        .img{
+            width: 100%;
+            img{
+                @include Img($wid:100%,$heit:100%,$o_fit:cover);
+            }
+        }
+        .title
+    }
+}
