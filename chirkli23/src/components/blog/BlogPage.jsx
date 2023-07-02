@@ -14,13 +14,15 @@ const BlogPage = () => {
               <div key={id} className="col-lg-4">
                 <div className="blog-cart">
                   <div className="img">
+                    <Link href="#">
                     <img src={img} alt="" />
-                  </div>
+                    </Link>
                   <div className="title">
                     <Link href="#">
                         <h3>{body}</h3>
                     </Link>
                     <p>{title}</p>
+                  </div>
                   </div>
                 </div>
               </div>

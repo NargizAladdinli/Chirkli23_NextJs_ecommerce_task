@@ -2,11 +2,19 @@
     padding-top: 50px;
     .blog-cart{
         .img{
-            width: 100%;
+            @include Img($wid:100%,$heit:420px,$pos:relative);
+            @media (max-width:768px) {  height: 300px; }
             img{
                 @include Img($wid:100%,$heit:100%,$o_fit:cover);
             }
+            .title{
+                position: absolute;
+                bottom: 0px;
+                height: 50%;
+                background: rgba(90, 90, 90, 0.5);
+                backdrop-filter: blur(5px);
+                padding: 30px;
+            }
         }
-        .title
     }
 }
