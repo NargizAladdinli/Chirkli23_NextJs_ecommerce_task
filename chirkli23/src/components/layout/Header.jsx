@@ -105,7 +105,7 @@ const Header = () => {
                         <button onClick={handleTheme}>{theme === "dark" ? <FaSun/> : <FaMoon/>}</button>
                     </div>
                     <div className="user item ">
-                        <Link href="#">
+                        <Link href="/user">
                             <FaUser/>
                         </Link>
                     </div>

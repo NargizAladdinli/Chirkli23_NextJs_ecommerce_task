@@ -1024,8 +1024,7 @@ ul {
      object-fit: cover;
 }
 #blog .blog-cart .img .title {
-  font-family: "Michroma", sans-serif;
-  height: 18%;
+  height: 20%;
   position: absolute;
   bottom: -1px;
   background: rgba(90, 90, 90, 0.5);
@@ -1035,6 +1034,7 @@ ul {
   transition: all 0.4s linear;
 }
 #blog .blog-cart .img .title h3 {
+  font-family: "Michroma", sans-serif;
   font-size: 20px;
   font-weight: 600;
 }
@@ -1047,6 +1047,22 @@ ul {
   color: #f2ebe9;
   transition: all 0.4s ease-in-out;
   border-bottom: none;
+}
+#blog .blog-cart .img .title p {
+  margin-top: 25px;
+  color: #e99f4c;
+  font-size: 20px;
+}
+#blog .blog-cart .img .title .read {
+  text-decoration: none;
+  color: #f2ebe9;
+  font-size: 16px;
+  transition: all 0.4s ease-in-out;
+  border-bottom: none;
+  float: right;
+}
+#blog .blog-cart .img .title .read:hover {
+  color: #de5499;
 }
 
 #footer .footer-first {

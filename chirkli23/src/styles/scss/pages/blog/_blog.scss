@@ -14,13 +14,13 @@
             @media (max-width:768px) {  height: 300px; }
             img{ @include Img($wid:100%,$heit:100%,$o_fit:cover); }
             .title{
-                font-family: 'Michroma', sans-serif;
-                @include Img($pos:absolute,$botom:-1px,$heit:18%,);
+                @include Img($pos:absolute,$botom:-1px,$heit:20%,);
                 background: rgba(90, 90, 90, 0.5);
                 backdrop-filter: blur(5px);
                 padding: 30px;
                 transition: all 0.4s linear;
                 h3{
+                    font-family: 'Michroma', sans-serif;
                     @include Text($f_size:$size_20,$f_weight:$weight_600);
                     &:hover{
                         a{
@@ -33,6 +33,17 @@
                         transition: all 0.4s ease-in-out;
                         border-bottom: none;
                     }
+                }
+                p{
+                    margin-top: 25px;
+                    @include Text($f_size:$size_20,$colrs:$e9_clr);
+                }
+                .read{
+                    @include Text($t_decoration:none,$colrs:$f2_clr, $f_size:$size_16);
+                    transition: all 0.4s ease-in-out;
+                    border-bottom: none;
+                    float: right;
+                    &:hover{ color: $de_clr; }
                 }
             }
         }

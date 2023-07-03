@@ -1,6 +1,7 @@
 import { BlogContext } from "@/context/blogContext";
 import Link from "next/link";
 import { useContext } from "react";
+import { FaAngleRight } from "react-icons/fa";
 
 const BlogPage = () => {
   const { blog } = useContext(BlogContext);
@@ -22,6 +23,7 @@ const BlogPage = () => {
                     <Link href="#">{body}</Link>
                     </h3>
                     <p>{title}</p>
+                    <Link className="read" href="#">Read More <FaAngleRight/></Link>
                   </div>
                   </div>
                 </div>

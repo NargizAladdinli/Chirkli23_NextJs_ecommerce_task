@@ -24,7 +24,6 @@ const Contacts = () => {
   };
   return (
     <section id="send">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor atque numquam enim.
       <div className="container">
         <div className="row">
           <div className="col-lg-6">
