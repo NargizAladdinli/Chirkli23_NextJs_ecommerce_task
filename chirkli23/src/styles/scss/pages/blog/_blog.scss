@@ -1,19 +1,39 @@
 #blog{
     padding-top: 50px;
     .blog-cart{
-        .img{
-            @include Img($wid:100%,$heit:420px,$pos:relative);
-            @media (max-width:768px) {  height: 300px; }
-            img{
-                @include Img($wid:100%,$heit:100%,$o_fit:cover);
+        &:hover{
+            .img{
+                .title{
+                    @include Img($heit:50%,$opacity:1);
+                    visibility: visible;
+                }
             }
+        }
+        .img{
+            @include Img($wid:100%,$heit:420px,$pos:relative,$flow:hidden);
+            @media (max-width:768px) {  height: 300px; }
+            img{ @include Img($wid:100%,$heit:100%,$o_fit:cover); }
             .title{
-                position: absolute;
-                bottom: 0px;
-                height: 50%;
+                font-family: 'Michroma', sans-serif;
+                @include Img($pos:absolute,$botom:-1px,$heit:18%,);
                 background: rgba(90, 90, 90, 0.5);
                 backdrop-filter: blur(5px);
                 padding: 30px;
+                transition: all 0.4s linear;
+                h3{
+                    @include Text($f_size:$size_20,$f_weight:$weight_600);
+                    &:hover{
+                        a{
+                            color: $de_clr;
+                            border-bottom: 2px solid $f2_clr;
+                        }
+                    }
+                    a{
+                        @include Text($t_decoration:none,$colrs:$f2_clr);
+                        transition: all 0.4s ease-in-out;
+                        border-bottom: none;
+                    }
+                }
             }
         }
     }

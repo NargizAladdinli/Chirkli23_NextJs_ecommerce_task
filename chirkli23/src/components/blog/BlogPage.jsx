@@ -7,7 +7,7 @@ const BlogPage = () => {
   return (
     <section id="blog">
       <div className="container">
-        <div className="row">
+        <div className="row g-4">
           {blog.map((item) => {
             const { id, img, title, body } = item;
             return (
@@ -18,9 +18,9 @@ const BlogPage = () => {
                     <img src={img} alt="" />
                     </Link>
                   <div className="title">
-                    <Link href="#">
-                        <h3>{body}</h3>
-                    </Link>
+                    <h3>
+                    <Link href="#">{body}</Link>
+                    </h3>
                     <p>{title}</p>
                   </div>
                   </div>
