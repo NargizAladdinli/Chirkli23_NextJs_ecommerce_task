@@ -1,9 +1,10 @@
+import BlogId from "@/components/blog/BlogId";
 import Scrolltotop from "@/components/scroll/Scrolltotop";
 import Head from "next/head";
 import Link from "next/link";
 import { FaAngleRight } from "react-icons/fa";
 
-const IdPage = () =>  {
+const IdPage = ({data}) =>  {
     return(
         <>
         <Head>
@@ -23,9 +24,22 @@ const IdPage = () =>  {
             </div>
           </div>
         </section>
+        {/* <div dangerouslySetInnerHTML={{__html: data.content}}></div> */}
+        {/* <BlogId page={data}/> */}
         </main>
         <Scrolltotop/>
         </>
     )
 }
 export default IdPage;
+
+export const getserverSideProps = async (context) => {
+  const res = await fetch(`https://json-server-tan-kappa.vercel.app/blogchirkli/${context.params.blogId}`);
+  const data = await res.json();
+  console.log(data);
+  return{
+    props:{
+      // data,
+    },
+  };
+};

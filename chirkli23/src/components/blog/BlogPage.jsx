@@ -2,6 +2,7 @@ import { BlogContext } from "@/context/blogContext";
 import Link from "next/link";
 import { useContext } from "react";
 import { FaAngleRight } from "react-icons/fa";
+import Blogs from "./Blogs";
 
 const BlogPage = () => {
   const { blog } = useContext(BlogContext);
@@ -12,22 +13,7 @@ const BlogPage = () => {
           {blog.map((item) => {
             const { id, img, title, body } = item;
             return (
-              <div key={id} className="col-lg-4">
-                <div className="blog-cart">
-                  <div className="img">
-                    <Link href="#">
-                    <img src={img} alt="" />
-                    </Link>
-                  <div className="title">
-                    <h3>
-                    <Link href="#">{body}</Link>
-                    </h3>
-                    <p>{title}</p>
-                    <Link className="read" href="#">Read More <FaAngleRight/></Link>
-                  </div>
-                  </div>
-                </div>
-              </div>
+              <Blogs items={item}/>
             );
           })}
         </div>
