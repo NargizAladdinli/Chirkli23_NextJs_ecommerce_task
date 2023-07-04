@@ -33,7 +33,7 @@ const IdPage = ({data}) =>  {
 }
 export default IdPage;
 
-export const getserverSideProps = async (context) => {
+export const getServerSideProps = async (context) => {
   const res = await fetch(`https://json-server-tan-kappa.vercel.app/blogchirkli/${context.params.blogId}`);
   const data = await res.json();
   console.log(data);
