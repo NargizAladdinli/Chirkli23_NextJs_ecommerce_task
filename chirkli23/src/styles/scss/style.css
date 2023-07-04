@@ -116,7 +116,7 @@ ul {
   background: #8c3560;
 }
 
-#products .carts .add-cart a button {
+#products .carts .add-cart button {
   padding: 10px 30px;
   color: #264143;
   font-size: 16px;
@@ -689,9 +689,9 @@ ul {
   visibility: hidden;
 }
 #products .carts:hover .add-cart button {
+  transform: translateY(-40px);
   opacity: 1;
   visibility: visible;
-  top: 0;
 }
 #products .carts .img {
   width: 100%;
@@ -734,7 +734,8 @@ ul {
 }
 #products .carts .add-cart {
   text-align: center;
-  position: relative;
+  width: 200px;
+  margin: auto;
 }
 #products .carts .add-cart a {
   text-decoration: none;
@@ -742,26 +743,13 @@ ul {
   font-size: 18px;
   font-weight: 700;
 }
-#products .carts .add-cart a button {
-  position: absolute;
-  top: 100%;
-  left: 25%;
+#products .carts .add-cart button {
+  transform: translateY(-20px);
   opacity: 0;
+  transition: all 0.3s linear;
   visibility: hidden;
 }
-@media (max-width: 768px) {
-  #products .carts .add-cart a button {
-    position: absolute;
-    left: 20%;
-  }
-}
-@media (max-width: 520px) {
-  #products .carts .add-cart a button {
-    position: absolute;
-    left: 35%;
-  }
-}
-#products .carts .add-cart a button:hover {
+#products .carts .add-cart button:hover {
   background-color: #de5499;
 }
 

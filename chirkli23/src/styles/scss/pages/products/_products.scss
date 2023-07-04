@@ -20,9 +20,9 @@
                     visibility: hidden;
                 }
                 button{
+                    transform: translateY(-40px);
                     opacity: 1;
                     visibility: visible;
-                    top: 0;
                 }
             }
         }
@@ -54,23 +54,16 @@
         }
         .add-cart{
             text-align: center;
-            position: relative;
-            a{
-                @include Text($f_size:$size_18,$f_weight:$weight_700,$t_decoration:none,$colrs:inherit);
-                button{
-                    @media (max-width:768px) {
-                        position: absolute;
-                        left: 20%;
-                    }
-                    @media (max-width:520px) {
-                        position: absolute;
-                        left: 35%;
-                    }
-                    @include Img($pos:absolute,$top:100%,$left:25%,$opacity:0);
-                    visibility: hidden;
-                    @extend %_addcart;
-                    &:hover{ background-color: $de_clr; }
-                }
+            width: 200px;
+            margin: auto;
+            a{ @include Text($f_size:$size_18,$f_weight:$weight_700,$t_decoration:none,$colrs:inherit); }
+            button{
+                transform: translateY(-20px);
+                opacity: 0;
+                transition: all 0.3s linear;
+                visibility: hidden;
+                @extend %_addcart;
+                &:hover{ background-color: $de_clr; }
             }
         }
     }

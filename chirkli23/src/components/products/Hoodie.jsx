@@ -1,40 +1,22 @@
 import { useContext } from "react";
 import { ProductContext } from "@/context/product.context";
-import { CartContext } from "@/context/cart.context";
-import Link from "next/link";
+import Hoodies from "./Hoodies";
+
 
 const HoodieItems = () => {
     const {product} = useContext(ProductContext);
-    const {addToCart} = useContext(CartContext);
 
     return(
         <section id="products">
       <div className="container">
+        <div className="col-lg-8">
         <div className="row g-3">
           {product.map((products) => {
-            const {id, img, imgUrl, title, price} = products
             return (
-              <div key={id} className="col-sm-6 col-md-5 col-lg-4 pb-4">
-                <div className="carts">
-                  <div className="img">
-                    <Link href="#">
-                      <img className="pos-one" src={img} alt="" />
-                      <img className="pos-two" src={imgUrl} alt="" />
-                    </Link>
-                  </div>
-                  <div className="content">
-                    <Link href="#"><p>{title}</p></Link>
-                  </div>
-                  <div className="add-cart">
-                    <Link href="#">
-                    <p>${price}</p>
-                    <button onClick={() => addToCart(products, id)}>Add to Card</button>
-                    </Link>
-                  </div>
-                </div>
-              </div>
+              <Hoodies products={products}/>
             );
           })}
+        </div>
         </div>
       </div>
     </section>
