@@ -1,5 +1,4 @@
-import { useContext } from "react";
-import { BlogContext } from "@/context/blogContext";
+
 import Link from "next/link";
 import { FaAngleRight } from "react-icons/fa";
 
@@ -17,10 +16,16 @@ const Blogs = ({items}) => {
                     </Link>
                   <div className="title">
                     <h3>
-                    <Link href="#">{body}</Link>
+                    <Link href={{
+                      pathname: "/blog/[blogId]",
+                      query: {blogId: id},
+                    }}>{body}</Link>
                     </h3>
                     <p>{title}</p>
-                    <Link className="read" href="#">Read More <FaAngleRight/></Link>
+                    <Link className="read" href={{
+                      pathname: "/blog/[blogId]",
+                      query: {blogId: id}
+                    }}>Read More <FaAngleRight/></Link>
                   </div>
                   </div>
                 </div>

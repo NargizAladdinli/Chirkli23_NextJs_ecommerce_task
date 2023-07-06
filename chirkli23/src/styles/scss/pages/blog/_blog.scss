@@ -37,6 +37,10 @@
                 p{
                     margin-top: 25px;
                     @include Text($f_size:$size_20,$colrs:$e9_clr);
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;  
+                    overflow: hidden;
                 }
                 .read{
                     @include Text($t_decoration:none,$colrs:$f2_clr, $f_size:$size_16);

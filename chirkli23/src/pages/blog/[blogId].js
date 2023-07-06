@@ -24,8 +24,7 @@ const IdPage = ({data}) =>  {
             </div>
           </div>
         </section>
-        {/* <div dangerouslySetInnerHTML={{__html: data.content}}></div> */}
-        {/* <BlogId page={data}/> */}
+        <BlogId data={data}/>
         </main>
         <Scrolltotop/>
         </>
@@ -39,7 +38,7 @@ export const getServerSideProps = async (context) => {
   console.log(data);
   return{
     props:{
-      // data,
+      data,
     },
   };
 };

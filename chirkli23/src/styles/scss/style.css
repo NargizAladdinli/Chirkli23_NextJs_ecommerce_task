@@ -692,6 +692,8 @@ ul {
   transform: translateY(-40px);
   opacity: 1;
   visibility: visible;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #products .carts .img {
   width: 100%;
@@ -1040,6 +1042,10 @@ ul {
   margin-top: 25px;
   color: #e99f4c;
   font-size: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 #blog .blog-cart .img .title .read {
   text-decoration: none;
