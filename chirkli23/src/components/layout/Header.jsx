@@ -88,7 +88,7 @@ const Header = () => {
                                     <Link href='./about' className={current === 'about' ? 'active' : 'nonactive'}>About us</Link>
                                 </li>
                                 <li>
-                                    <Link href='./about' className={current === 'about' ? 'active' : 'nonactive'}>FAQ</Link>
+                                    <Link href='./faq' className={current === 'faq' ? 'active' : 'nonactive'}>FAQ</Link>
                                 </li>
                             </ul>
                         </li>
