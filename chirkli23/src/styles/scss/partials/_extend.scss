@@ -30,3 +30,13 @@
     @include Text($t_decoration:none,$colrs:$f2_clr,$ground:$gradient_clr,$t_transform:uppercase,$radius:$radius_15,$f_size:$size_16,$f_weight:$weight_600);
     transition: all 0.5s ease-in-out;
 }
+%_contactfaq{
+    @include Text($t_decoration:none,$colrs:$white_clr,$ground:$gradient_clr,$radius:$radius_10,$t_transform:uppercase);
+    padding: 5px 20px;
+}
+%_shop{
+    padding: 10px 20px;
+    @include Text($ground:$f2_clr,$radius:$radius_15,$t_decoration:none,$colrs:$body_clr);
+    margin-top: 9px;
+    display: inline-block;
+}

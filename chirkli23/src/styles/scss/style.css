@@ -139,6 +139,25 @@ ul {
   transition: all 0.5s ease-in-out;
 }
 
+#other .row-site a {
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(124deg, #f95a85, #f70361, #f95420);
+  border-radius: 10px;
+  text-transform: uppercase;
+  padding: 5px 20px;
+}
+
+#shop .shop-style .title a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #264143;
+  background: #f2ebe9;
+  border-radius: 15px;
+  margin-top: 9px;
+  display: inline-block;
+}
+
 #header {
   padding-top: 30px;
   font-family: "Michroma", sans-serif;
@@ -603,6 +622,68 @@ ul {
   font-weight: 700;
 }
 
+#shop {
+  padding: 100px 0;
+}
+#shop .shop-style {
+  background: #65a395;
+  border-radius: 15px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  #shop .shop-style {
+    flex-direction: column;
+  }
+}
+#shop .shop-style .img {
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+}
+@media (max-width: 768px) {
+  #shop .shop-style .img {
+    width: 100%;
+  }
+}
+#shop .shop-style .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#shop .shop-style .title {
+  margin: auto;
+  color: #f2ebe9;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  #shop .shop-style .title {
+    padding-top: 30px;
+  }
+}
+#shop .shop-style .title h3 {
+  font-size: 35px;
+  font-weight: 700;
+}
+#shop .shop-style .title h4 {
+  font-size: 30px;
+  font-weight: 400;
+}
+#shop .shop-style .title p {
+  font-size: 17px;
+}
+#shop .shop-style .title a {
+  transition: all 0.3s linear;
+}
+#shop .shop-style .title a:hover {
+  background: #264143;
+  color: #f2ebe9;
+}
+
 #aboutus {
   padding-top: 50px;
 }
@@ -672,6 +753,11 @@ ul {
 #products {
   padding-top: 70px;
   padding-bottom: 70px;
+}
+#products h3 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 700;
 }
 #products .carts {
   font-family: "Jost", sans-serif;
@@ -991,6 +1077,11 @@ ul {
 #blog {
   padding-top: 50px;
 }
+#blog h3 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 700;
+}
 #blog .blog-cart:hover .img .title {
   height: 50%;
   opacity: 1;
@@ -1028,15 +1119,9 @@ ul {
   font-size: 20px;
   font-weight: 600;
 }
-#blog .blog-cart .img .title h3:hover a {
-  color: #de5499;
-  border-bottom: 2px solid #f2ebe9;
-}
 #blog .blog-cart .img .title h3 a {
   text-decoration: none;
   color: #f2ebe9;
-  transition: all 0.4s ease-in-out;
-  border-bottom: none;
 }
 #blog .blog-cart .img .title p {
   margin-top: 25px;
@@ -1083,6 +1168,7 @@ ul {
   border: 1px solid rgb(127, 127, 127);
   border-radius: 10px 10px 0 0;
   padding: 5px 20px;
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1134,11 +1220,6 @@ ul {
   }
 }
 #other .row-site a {
-  text-decoration: none;
-  color: #fff;
-  background: linear-gradient(124deg, #f95a85, #f70361, #f95420);
-  border-radius: 10px;
-  padding: 5px 20px;
   transition: all 0.3s ease-in-out;
 }
 #other .row-site a:hover {

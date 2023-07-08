@@ -5,6 +5,8 @@ import Collapse from "@/components/Collapse/Collapse";
 import SwiperOne from "@/components/swiper/SwiperOne";
 import SwiperTwo from "@/components/swiper/SwiperTwo";
 import Products from "@/components/products/Products";
+import HomeBlog from "@/components/blog/HomeBlog";
+import ShopNow from "@/components/percent/ShopNow";
 
 export default function Home( ) {
   return (
@@ -21,6 +23,8 @@ export default function Home( ) {
         <SwiperTwo/>
         <Products />
         <Percent/>
+        <HomeBlog/>
+        <ShopNow/>
       </main>
       <Scrolltotop/>
     </>

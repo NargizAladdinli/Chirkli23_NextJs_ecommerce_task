@@ -1,5 +1,9 @@
 #blog{
     padding-top: 50px;
+    h3{
+        margin-bottom: 20px;
+        @include Text($f_size:$size_25,$f_weight:$weight_700);
+    }
     .blog-cart{
         &:hover{
             .img{
@@ -22,17 +26,7 @@
                 h3{
                     font-family: 'Michroma', sans-serif;
                     @include Text($f_size:$size_20,$f_weight:$weight_600);
-                    &:hover{
-                        a{
-                            color: $de_clr;
-                            border-bottom: 2px solid $f2_clr;
-                        }
-                    }
-                    a{
-                        @include Text($t_decoration:none,$colrs:$f2_clr);
-                        transition: all 0.4s ease-in-out;
-                        border-bottom: none;
-                    }
+                    a{ @include Text($t_decoration:none,$colrs:$f2_clr); }
                 }
                 p{
                     margin-top: 25px;

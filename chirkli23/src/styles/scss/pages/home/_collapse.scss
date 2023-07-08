@@ -22,18 +22,6 @@
         }
         img{ @include Img($wid:100%,$heit:100%,$o_fit:cover); }
     }
-    // .blue{
-    //     background-color: #63cac9;
-    //     min-height: 360px;
-    // }
-    // .orange{
-    //     background: #febd97;
-    //     min-height: 360px;
-    // }
-    // .pink{
-    //     background: #ffa5c1;
-    //     min-height: 720px;
-    // }
 }
 #collapse{
     padding-top: 70px;
@@ -49,6 +37,39 @@
             .text-collapse{
                 margin-top: 12px;
                 h4{ @include Text($f_size:$size_16,$f_weight:$weight_700); }
+            }
+        }
+    }
+}
+#shop{
+    padding: 100px 0;
+    .shop-style{
+        @include Text($ground:$shop_clr,$radius:$radius_15);
+        padding: 30px;
+        @include Flex($j_content:center,$a_items:center);
+        @media (max-width:768px) {
+            flex-direction: column;
+        }
+        .img{
+            @media (max-width:768px) { width: 100%; }
+            @include Img($wid:60%,$heit:100%,$flow:hidden);
+            border-radius: $radius_15;
+            img{ @include Img($wid:100%,$heit:100%,$o_fit:cover); }
+        }
+        .title{
+            @media (max-width:768px) { padding-top: 30px; }
+            margin: auto;
+            @include Text($t_align:center,$colrs:$f2_clr);
+            h3{ @include Text($f_size:$size_35,$f_weight:$weight_700); }
+            h4{ @include Text($f_size:$size_30,$f_weight:$weight_400); }
+            p{ @include Text($f_size:$size_17); }
+            a{
+                @extend %_shop;
+                transition: all 0.3s linear;
+                &:hover{
+                    background: $body_clr;
+                    color: $f2_clr;
+                }
             }
         }
     }

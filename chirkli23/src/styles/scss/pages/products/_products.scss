@@ -1,6 +1,10 @@
 #products{
     padding-top: 70px;
     padding-bottom: 70px;
+    h3{
+        margin-bottom: 20px;
+        @include Text($f_weight:$weight_700,$f_size:$size_25);
+    }
     .carts{
         font-family: 'Jost', sans-serif;
         &:hover{

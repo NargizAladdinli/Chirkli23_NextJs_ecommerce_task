@@ -8,6 +8,7 @@ const Products = () => {
   return (
     <section id="products">
       <div className="container">
+        <h3>New Product</h3>
         <div className="row g-3">
           {product.slice(4,8).map((products) => {
             return(
