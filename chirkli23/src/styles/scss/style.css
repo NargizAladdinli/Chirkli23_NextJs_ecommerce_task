@@ -1062,24 +1062,87 @@ ul {
 #questions {
   padding-top: 50px;
 }
+#questions .container h3 {
+  text-align: center;
+  margin-bottom: 50px;
+}
 #questions .container .accordion {
-  width: 100%;
+  width: 70%;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  #questions .container .accordion {
+    width: 100%;
+  }
 }
 #questions .container .accordion .item {
-  border: 1px solid black;
-  margin: 30px;
+  margin-top: 10px;
+}
+#questions .container .accordion .item .title {
+  font-size: 20px;
+  border: 1px solid rgb(127, 127, 127);
+  border-radius: 10px 10px 0 0;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#questions .container .accordion .item .title h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
 }
 #questions .container .accordion .item .content {
-  max-height: 0;
+  height: 100%;
   opacity: 0;
+  max-height: 0;
   visibility: hidden;
-  transition: all 0.5s linear;
+  transition: all 0.5s ease-in-out;
+  padding: 0px 20px;
+  font-size: 15px;
 }
 #questions .container .accordion .item .show {
+  height: auto;
   opacity: 1;
+  font-size: 15px;
+  border: 1px solid rgb(127, 127, 127);
+  border-radius: 0 0 10px 10px;
   visibility: visible;
   max-height: 1000px;
-  transition: all 0.5s linear;
+  transition: all 0.5s ease-in-out;
+  padding: 10px 20px;
+}
+
+#other {
+  padding: 100px 0;
+}
+#other .row-site {
+  width: 70%;
+  margin: auto;
+  font-size: 20px;
+  border: 1px solid rgb(127, 127, 127);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+@media (max-width: 768px) {
+  #other .row-site {
+    width: 100%;
+  }
+}
+#other .row-site a {
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(124deg, #f95a85, #f70361, #f95420);
+  border-radius: 10px;
+  padding: 5px 20px;
+  transition: all 0.3s ease-in-out;
+}
+#other .row-site a:hover {
+  background: linear-gradient(124deg, #f95420, #f70361, #f95a85);
 }
 
 #footer .footer-first {

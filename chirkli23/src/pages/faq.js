@@ -1,6 +1,8 @@
+import OtherQuestions from "@/components/faq/OtherQuestion";
 import Questions from "@/components/faq/Questions";
 import Head from "next/head";
-
+import Link from "next/link";
+import { FaAngleRight } from "react-icons/fa";
 
 export default function Faq(){
     return(
@@ -12,7 +14,16 @@ export default function Faq(){
         <link rel="icon" href="https://cdn.shopify.com/s/files/1/0607/7287/6512/files/favicon_d5c9515a-64b4-47af-9ef1-236eddcc39a8_16x16.png?v=1637219740" />
         </Head>
         <main>
+        <section id="heading">
+            <div className="title">
+                <h2>FAQ</h2>
+                <div className="link">
+                <Link href='/'>HOME <FaAngleRight/> </Link>
+                </div>
+            </div>
+        </section>
             <Questions/>
+            <OtherQuestions/>
         </main>
         </>
     )

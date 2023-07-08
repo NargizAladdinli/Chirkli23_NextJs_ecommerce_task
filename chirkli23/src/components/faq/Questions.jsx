@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Question from "./Question";
 
 const Questions = () => {
   const [questions, setQuestions] = useState([]);
@@ -9,7 +8,6 @@ const Questions = () => {
         "https://json-server-tan-kappa.vercel.app/questions"
       );
       const res = await req.json();
-      // console.log(res);
       setQuestions(res);
     };
     faqFetch();
@@ -26,6 +24,7 @@ const Questions = () => {
   return (
     <section id="questions">
       <div className="container">
+        <h3>Frequently Asked Questions</h3>
         <div className="accordion">
           {questions.map((item, i) => {
             const { question, answer, id } = item;
@@ -33,6 +32,7 @@ const Questions = () => {
               <div key={id} className="item">
                 <div onClick={() => toggle(i)} className="title">
                   <h2>{question}</h2>
+                  <span>{selected === i ? "-" : "+"}</span>
                 </div>
                 <div className={selected === i ? "show" : "content"}>
                   {/* <p>{answer}</p> */}
@@ -44,6 +44,7 @@ const Questions = () => {
         </div>
       </div>
     </section>
+
   );
 };
 export default Questions;

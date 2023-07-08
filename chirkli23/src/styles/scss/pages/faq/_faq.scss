@@ -1,25 +1,59 @@
 #questions{
     padding-top: 50px;
     .container{
+        h3{
+            text-align: center;
+            margin-bottom: 50px;
+        }
         .accordion{
-            width: 100%;
+            width: 70%;
+            margin: auto;
+            @media (max-width:768px) { width: 100%; }
             .item{
-                border: 1px solid black;
-                margin: 30px;
+                margin-top: 10px;
+                .title{
+                    @include Text($border:1px solid $rgb_127,$radius:$faq_radius,$f_size:$size_20);
+                    padding: 5px 20px;
+                    @include Flex($a_items:center,$j_content:space-between);
+                    h2{
+                        font-family: 'Poppins', sans-serif;
+                        @include Text($f_size:$size_20,$f_weight:$weight_500);
+                    }
+                }
                 .content{
+                    @include Img($heit:100%,$opacity:0);
                     max-height: 0;
-                    opacity: 0;
                     visibility: hidden;
-                    transition: all 0.5s linear;
+                    transition: all 0.5s ease-in-out;
+                    padding: 0px 20px;
+                    font-size: $size_15;
                 }
                 .show{
-                    // height: auto;
-                    opacity: 1;
+                    @include Img($opacity:1,$heit:auto);
+                    @include Text($border:1px solid $rgb_127,$radius:$radius_0,$f_size:$size_15);
                     visibility: visible;
                     max-height: 1000px;
-                    transition: all 0.5s linear;
+                    transition: all 0.5s ease-in-out;
+                    padding: 10px 20px;
                 }
             }
+        }
+    }
+}
+#other{
+    padding: 100px 0;
+    .row-site{
+        @media (max-width:768px) { width: 100%; }
+        width: 70%;
+        margin: auto;
+        @include Text($border:1px solid $rgb_127,$radius:$radius_10,$f_size:$size_20);
+        @include Flex($a_items:center,$j_content:center,$f_direction:column);
+        padding: 30px;
+        a{
+            @include Text($t_decoration:none,$colrs:$white_clr,$ground:$gradient_clr,$radius:$radius_10);
+            padding: 5px 20px;
+            transition: all 0.3s ease-in-out;
+            &:hover{ @include Text($ground:$gradient_link,); }
         }
     }
 }
