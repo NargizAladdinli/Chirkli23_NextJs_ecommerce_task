@@ -5,7 +5,7 @@ const ShopNow = () => {
     return(
         <section id="shop">
             <div className="container">
-                <div className="row">
+                <div className="row g-3">
                     <div className="col-lg-9">
                         <div className="shop-style">
                             <div className="img">
@@ -17,6 +17,11 @@ const ShopNow = () => {
                                 <p>Shop the selection of clothes</p>
                                 <Link href="#">Shop Now</Link>
                             </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-3">
+                        <div className="emailsend">
+                            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius deleniti nisi quasi!</div>
                         </div>
                     </div>
                 </div>

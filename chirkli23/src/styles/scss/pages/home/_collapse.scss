@@ -47,9 +47,7 @@
         @include Text($ground:$shop_clr,$radius:$radius_15);
         padding: 30px;
         @include Flex($j_content:center,$a_items:center);
-        @media (max-width:768px) {
-            flex-direction: column;
-        }
+        @media (max-width:768px) { flex-direction: column; }
         .img{
             @media (max-width:768px) { width: 100%; }
             @include Img($wid:60%,$heit:100%,$flow:hidden);
@@ -72,5 +70,10 @@
                 }
             }
         }
+    }
+    .emailsend{
+        @include Text($ground:$sendemil,$radius:$radius_15);
+        @include Img($wid:100%,$heit:100%,);
+        padding: 30px;
     }
 }

@@ -683,6 +683,13 @@ ul {
   background: #264143;
   color: #f2ebe9;
 }
+#shop .emailsend {
+  background: #FDD835;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
 
 #aboutus {
   padding-top: 50px;
