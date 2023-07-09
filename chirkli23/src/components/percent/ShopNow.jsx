@@ -2,6 +2,10 @@ import Link from "next/link";
 
 
 const ShopNow = () => {
+    const handleSubmit = (e) => {
+        e.preventDefault()
+    }
+
     return(
         <section id="shop">
             <div className="container">
@@ -24,9 +28,9 @@ const ShopNow = () => {
                             <div className="img">
                                 <img src="https://demo.templatetrend.com/magento/MAG666/pub/static/version1560839252/frontend/Ortho/euforia/en_US/images/mail.png" alt="" />
                             </div>
-                            <form action="">
+                            <form onSubmit={handleSubmit} action="">
                                 <input type="text" placeholder="Enter your email address"/>
-                                <button>submit</button>
+                                <button type="submit">Subscribe</button>
                             </form>
                         </div>
                     </div>

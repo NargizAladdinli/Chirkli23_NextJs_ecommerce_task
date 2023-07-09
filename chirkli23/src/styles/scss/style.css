@@ -702,7 +702,21 @@ ul {
 }
 #shop .emailsend form {
   margin-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
+#shop .emailsend form input {
+  padding: 6px 10px;
+  width: 100%;
+}
+#shop .emailsend form button {
+  margin-top: 20px;
+  text-align: center;
+  padding: 5px 10px;
+}
+
 #aboutus {
   padding-top: 50px;
 }

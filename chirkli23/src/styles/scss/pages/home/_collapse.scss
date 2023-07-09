@@ -81,8 +81,16 @@
         }
         form{
             margin-top: 30px;
+            @include Flex($a_items:center,$f_direction:column);
+            width: 100%;
             input{
-                
+                padding: 6px 10px;
+                width: 100%;
+            }
+            button{
+                margin-top: 20px;
+                text-align: center;
+                padding: 5px 10px;
             }
         }
     }
