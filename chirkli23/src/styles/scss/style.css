@@ -688,9 +688,21 @@ ul {
   border-radius: 15px;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding: 30px;
 }
-
+#shop .emailsend .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#shop .emailsend form {
+  margin-top: 30px;
+}
 #aboutus {
   padding-top: 50px;
 }

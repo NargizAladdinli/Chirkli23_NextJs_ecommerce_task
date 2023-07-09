@@ -21,7 +21,13 @@ const ShopNow = () => {
                     </div>
                     <div className="col-lg-3">
                         <div className="emailsend">
-                            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius deleniti nisi quasi!</div>
+                            <div className="img">
+                                <img src="https://demo.templatetrend.com/magento/MAG666/pub/static/version1560839252/frontend/Ortho/euforia/en_US/images/mail.png" alt="" />
+                            </div>
+                            <form action="">
+                                <input type="text" placeholder="Enter your email address"/>
+                                <button>submit</button>
+                            </form>
                         </div>
                     </div>
                 </div>

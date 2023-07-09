@@ -74,6 +74,16 @@
     .emailsend{
         @include Text($ground:$sendemil,$radius:$radius_15);
         @include Img($wid:100%,$heit:100%,);
+        @include Flex($a_items:center,$j_content:center,$f_direction:column);
         padding: 30px;
+        .img{
+            img{ @include Img($wid:100%,$heit:100%,$o_fit:cover); }
+        }
+        form{
+            margin-top: 30px;
+            input{
+                
+            }
+        }
     }
 }
