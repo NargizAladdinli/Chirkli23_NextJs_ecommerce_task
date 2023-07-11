@@ -708,12 +708,18 @@ ul {
   width: 100%;
 }
 #shop .emailsend form input {
-  padding: 6px 10px;
+  padding: 10px 14px;
   width: 100%;
+  color: #264143;
+}
+#shop .emailsend form input::-moz-placeholder {
+  color: #264143;
+}
+#shop .emailsend form input::placeholder {
+  color: #264143;
 }
 #shop .emailsend form button {
   margin-top: 20px;
-  text-align: center;
   padding: 5px 10px;
 }
 
@@ -1216,7 +1222,7 @@ ul {
   opacity: 0;
   max-height: 0;
   visibility: hidden;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.5s li;
   padding: 0px 20px;
   font-size: 15px;
 }
