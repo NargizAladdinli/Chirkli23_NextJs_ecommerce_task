@@ -13,10 +13,10 @@ const Questions = () => {
     faqFetch();
   }, []);
 
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState();
   const toggle = (i) => {
     if (selected === i) {
-      return setSelected(null);
+      return setSelected();
     }
 
     setSelected(i);
@@ -26,15 +26,15 @@ const Questions = () => {
       <div className="container">
         <h3>Frequently Asked Questions</h3>
         <div className="accordion">
-          {questions.map((item, i) => {
+          {questions.map((item, a) => {
             const { question, answer, id } = item;
             return (
               <div key={id} className="item">
-                <div onClick={() => toggle(i)} className="title">
+                <div onClick={() => toggle(a)} className="title">
                   <h2>{question}</h2>
-                  <span>{selected === i ? "-" : "+"}</span>
+                  <span>{selected === a ? "-" : "+"}</span>
                 </div>
-                <div className={selected === i ? "show" : "content"}>
+                <div className={selected === a ? "show" : "content"}>
                   {/* <p>{answer}</p> */}
                   {answer}
                 </div>

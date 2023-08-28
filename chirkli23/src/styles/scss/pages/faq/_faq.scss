@@ -33,8 +33,6 @@
                     @include Img($opacity:1,$heit:auto);
                     @include Text($border:1px solid $rgb_127,$radius:$radius_0,$f_size:$size_15);
                     visibility: visible;
-        
-        
                     max-height: 1000px;
                     transition: all 0.5s ease-in-out;
                     padding: 10px 20px;

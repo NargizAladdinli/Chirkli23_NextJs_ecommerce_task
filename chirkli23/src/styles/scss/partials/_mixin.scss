@@ -6,21 +6,7 @@
     flex-direction: $f_direction;
 }
 
-@mixin Img($wid: null, $heit: null, $o_fit: null, $o_pos: null, $flow: null, $pos: null, $top: null, $botom: null, $z_index: null, $left: null, $right: null, $opacity: null) {
-    width: $wid;
-    height: $heit;
-    object-fit: $o_fit;
-    object-position: $o_pos;
-    overflow: $flow;
-    position: $pos;
-    top: $top;
-    bottom: $botom;
-    z-index: $z_index;
-    left: $left;
-    right: $right;
-    opacity: $opacity;
-}
-
+ 
 @mixin Text($t_decoration: null, $colrs: null, $f_size: null, $f_weight: null, $t_align: null, $ground: null, $border: null, $l_spacing: null, $l_heit: null, $radius: null, $f_style: null, $t_transform:null) {
     text-decoration: $t_decoration;
     color: $colrs;
